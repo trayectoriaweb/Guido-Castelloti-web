@@ -7512,7 +7512,98 @@ function renderProjectDetail() {
     nextLink.href = 'proyecto.html?id=' + nextProject.slug;
     if (nextTitle) nextTitle.textContent = nextProject.title;
   }
+
+  // 7. Renderizar sección "Otros proyectos" con afinidad temática inteligente
+  renderMoreProjects(currentProject);
 }
+
+/* =========================================================================
+   Renderizado de la Sección "Otros Proyectos" (Recomendaciones Afines)
+   ========================================================================= */
+function renderMoreProjects(currentProject) {
+  const container = document.getElementById('moreProjectsGrid');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const currentCat = (currentProject.categories && currentProject.categories.length > 0)
+    ? currentProject.categories[0]
+    : currentProject.category;
+
+  const allInCat = PROJECTS_DATA.filter(p => {
+    const pCat = (p.categories && p.categories.length > 0) ? p.categories[0] : p.category;
+    return pCat === currentCat;
+  });
+
+  const currIdxInCat = allInCat.findIndex(p => p.slug === currentProject.slug);
+  const selected = [];
+
+  // Tomar los proyectos siguientes en la misma categoría (rotación fluida)
+  for (let i = 1; i < allInCat.length && selected.length < 3; i++) {
+    const idx = (currIdxInCat + i) % allInCat.length;
+    selected.push(allInCat[idx]);
+  }
+
+  // Si la categoría tiene menos de 3 proyectos, completar con proyectos destacados de otras áreas
+  if (selected.length < 3) {
+    const others = PROJECTS_DATA.filter(p => p.slug !== currentProject.slug && !selected.some(s => s.slug === p.slug));
+    let o = 0;
+    while (selected.length < 3 && o < others.length) {
+      selected.push(others[o++]);
+    }
+  }
+
+  // Generar las tarjetas editoriales
+  selected.forEach(proj => {
+    const card = document.createElement('a');
+    card.className = 'more-project-card';
+    card.href = 'proyecto.html?id=' + proj.slug;
+
+    const thumbBox = document.createElement('div');
+    thumbBox.className = 'more-project-thumb-box';
+
+    const img = document.createElement('img');
+    img.src = proj.heroImage || proj.mainImage;
+    img.alt = proj.title + ' — Guido Castellotti';
+    img.className = 'more-project-thumb-img';
+    img.loading = 'lazy';
+    thumbBox.appendChild(img);
+
+    const body = document.createElement('div');
+    body.className = 'more-project-body';
+
+    const meta = document.createElement('div');
+    meta.className = 'more-project-meta';
+
+    const catSpan = document.createElement('span');
+    catSpan.className = 'more-project-category';
+    catSpan.textContent = (proj.categories && proj.categories.length > 0) ? proj.categories.join(' · ') : (proj.category || 'Proyecto');
+
+    const dateSpan = document.createElement('span');
+    dateSpan.className = 'more-project-date';
+    dateSpan.textContent = proj.date || '2025';
+
+    meta.appendChild(catSpan);
+    meta.appendChild(dateSpan);
+
+    const titleEl = document.createElement('h3');
+    titleEl.className = 'more-project-name';
+    titleEl.textContent = proj.title;
+
+    const cta = document.createElement('div');
+    cta.className = 'more-project-cta';
+    cta.innerHTML = '<span>Ver proyecto</span><span class="arrow">→</span>';
+
+    body.appendChild(meta);
+    body.appendChild(titleEl);
+    body.appendChild(cta);
+
+    card.appendChild(thumbBox);
+    card.appendChild(body);
+
+    container.appendChild(card);
+  });
+}
+
 
 function initLightbox(gallery) {
   activeGallery = gallery;

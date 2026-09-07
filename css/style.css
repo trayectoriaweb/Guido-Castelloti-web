@@ -2306,3 +2306,179 @@ body.mobile-menu-open .floating-talk-wrapper {
   justify-content: center;
 }
 
+/* ==========================================================================
+   Sección "Otros Proyectos" (Recomendaciones Lógicas Afines)
+   ========================================================================== */
+.more-projects-section {
+  width: 100%;
+  background-color: #fafafa;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 80px 0 96px 0;
+}
+
+.more-projects-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--sp-edge, 24px);
+}
+
+.more-projects-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.more-projects-kicker {
+  display: block;
+  font-family: var(--font-headline, sans-serif);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red-editorial, #e51d1d);
+  margin-bottom: 8px;
+}
+
+.more-projects-title {
+  font-family: var(--font-headline, sans-serif);
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+.more-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 36px);
+  width: 100%;
+}
+
+.more-project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.more-project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+}
+
+.more-project-thumb-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.more-project-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.more-project-card:hover .more-project-thumb-img {
+  transform: scale(1.05);
+}
+
+.more-project-body {
+  padding: 20px 22px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.more-project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.more-project-category {
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #777777;
+}
+
+.more-project-date {
+  font-family: var(--font-headline, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #999999;
+}
+
+.more-project-name {
+  font-family: var(--font-headline, sans-serif);
+  font-size: 1.12rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  color: #111111;
+  margin: 0 0 14px 0;
+  transition: color 0.2s ease;
+}
+
+.more-project-card:hover .more-project-name {
+  color: var(--red-editorial, #e51d1d);
+}
+
+.more-project-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-headline, sans-serif);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--red-editorial, #e51d1d);
+  letter-spacing: 0.03em;
+}
+
+.more-project-cta span.arrow {
+  transition: transform 0.25s ease;
+}
+
+.more-project-card:hover .more-project-cta span.arrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .more-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .more-projects-section {
+    padding: 60px 0 72px 0;
+  }
+  .more-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .more-projects-inner {
+    padding: 0 16px;
+  }
+}
+
+
