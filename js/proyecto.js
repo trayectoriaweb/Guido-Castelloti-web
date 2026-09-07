@@ -24,7 +24,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA EN EXTERIOR"
+        "text": "FOTOGRAFÍA EN EXTERIOR",
+        "html": "<div class=\"title\"><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">FOTOGRAFÍA EN EXTERIOR </span></span></span>"
       },
       {
         "type": "media_collection",
@@ -59,7 +60,8 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES"
+        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">DISEÑO DE PIEZAS PARA REDES SOCIALES</span></span></span>"
       },
       {
         "type": "media_collection",
@@ -94,15 +96,62 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "BACKSTAGE CALIOPE FAMILY X KERCHAK"
+        "text": "BACKSTAGE CALIOPE FAMILY X KERCHAK",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">BACKSTAGE CALIOPE FAMILY X KERCHAK</span></span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 71,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0015.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0016.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0017.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0018.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0021.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0022.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/6cp3HyEHdEg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/6cp3HyEHdEg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 51,
+        "isVertical": true
       },
       {
         "type": "text",
-        "text": "COBERTURA DE EVENTOS"
+        "text": "COBERTURA DE EVENTOS",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">COBERTURA DE EVENTOS</span></span></span><br>"
       },
       {
         "type": "media_collection",
@@ -136,82 +185,131 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 70,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0027.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0028.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
+      },
+      {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/4Jc6ZfQjh4q/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/4Jc6ZfQjh4q/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 100,
+        "isVertical": false
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0001.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0002.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0003.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0004.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0005.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0006.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0007.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0008.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1
       },
       {
+        "src": "img/proyectos/guido_0015.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0016.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0017.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0018.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0021.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0022.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
         "src": "img/proyectos/guido_0023.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0024.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0025.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0026.jpg",
-        "alt": "CALIOPE FAMILY — Guido Castellotti",
-        "caption": "CALIOPE FAMILY",
+        "alt": "copia-de-bastilla — Guido Castellotti",
         "aspectRatio": 1.5
+      },
+      {
+        "src": "img/proyectos/guido_0027.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0028.jpg",
+        "alt": "copia-de-bastilla — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -235,7 +333,7 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 71,
         "images": [
           {
@@ -254,15 +352,19 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "ANIMACIÓN DE LOGO"
+        "text": "ANIMACIÓN DE LOGO",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">ANIMACIÓN DE LOGO</span></span></span><br>"
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/JRtQ9krSbZv/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/JRtQ9krSbZv/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 71,
+        "isVertical": false
       },
       {
         "type": "text",
-        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES"
+        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">DISEÑO DE PIEZAS PARA REDES SOCIALES</span></span></span><br>"
       },
       {
         "type": "media_collection",
@@ -511,7 +613,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 71,
         "images": [
           {
@@ -530,11 +632,14 @@ const PROJECTS_DATA = [
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/F3BLd3gBYuY/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/F3BLd3gBYuY/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 71,
+        "isVertical": true
       },
       {
         "type": "text",
-        "text": "FOTOGRAFÍA EN ESTUDIO"
+        "text": "FOTOGRAFÍA EN ESTUDIO",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">FOTOGRAFÍA EN ESTUDIO</span></span></span><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><br></span></span></span>"
       },
       {
         "type": "media_collection",
@@ -581,278 +686,235 @@ const PROJECTS_DATA = [
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/LjpeqoHWFEy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/LjpeqoHWFEy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 71,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0037.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0038.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0039.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0040.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0041.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0042.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0043.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0044.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0045.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0046.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0047.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0048.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0049.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0050.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0051.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0052.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0053.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0054.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0055.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0056.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0057.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.7985
       },
       {
         "src": "img/proyectos/guido_0058.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0059.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0060.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0061.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.7985
       },
       {
         "src": "img/proyectos/guido_0062.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0063.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0064.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0065.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0066.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0067.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5626
       },
       {
         "src": "img/proyectos/guido_0068.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0069.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0070.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0071.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0072.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0073.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0027.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0028.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0023.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0024.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0025.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0026.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0074.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0075.jpg",
-        "alt": "BASTILLA — Guido Castellotti",
-        "caption": "BASTILLA",
+        "alt": "bastilla — Guido Castellotti",
         "aspectRatio": 0.6667
       }
     ]
@@ -875,7 +937,7 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -894,11 +956,12 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "DESARROLLO DE IDENTIDAD"
+        "text": "DESARROLLO DE IDENTIDAD",
+        "html": "<div class=\"title\"><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">DESARROLLO DE IDENTIDAD</span></span></span>"
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 98,
         "images": [
           {
@@ -1015,7 +1078,18 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "ARTE DE TAPA"
+        "text": "ARTE DE TAPA",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">ARTE DE TAPA</span></span></span>"
+      },
+      {
+        "type": "image",
+        "widthPercent": 38,
+        "image": {
+          "src": "img/proyectos/guido_0160.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -1037,8 +1111,18 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "image",
+        "widthPercent": 34,
+        "image": {
+          "src": "img/proyectos/guido_0167.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -1057,11 +1141,14 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "COBERTURA SHOWS"
+        "text": "COBERTURA SHOWS",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">COBERTURA SHOWS</span></span></span>"
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/CNkUdowkUKH/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/CNkUdowkUKH/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 71,
+        "isVertical": true
       },
       {
         "type": "media_collection",
@@ -1132,7 +1219,8 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "FLYERS"
+        "text": "FLYERS",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">FLYERS</span></span></span>"
       },
       {
         "type": "media_collection",
@@ -1167,11 +1255,92 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "VISUALIZERS SORTIJA"
+        "text": "VISUALIZERS SORTIJA",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">VISUALIZERS SORTIJA</span></span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 70,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0140.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0141.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0148.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0149.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0150.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0151.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0074.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0075.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0023.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0024.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0027.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0028.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
       },
       {
         "type": "text",
-        "text": "DISEÑO DE REMERAS"
+        "text": "DISEÑO DE REMERAS",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">DISEÑO DE REMERAS</span></span></span><br>"
       },
       {
         "type": "media_collection",
@@ -1220,254 +1389,282 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0087.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0096.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.2496
       },
       {
         "src": "img/proyectos/guido_0098.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.536
       },
       {
         "src": "img/proyectos/guido_0099.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.4918
       },
       {
         "src": "img/proyectos/guido_0100.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0101.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.4149
       },
       {
         "src": "img/proyectos/guido_0102.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0103.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0104.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0105.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0106.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0107.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0108.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.9152
       },
       {
         "src": "img/proyectos/guido_0109.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6688
       },
       {
         "src": "img/proyectos/guido_0110.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.9333
       },
       {
         "src": "img/proyectos/guido_0111.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.9204
       },
       {
         "src": "img/proyectos/guido_0112.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.6497
       },
       {
         "src": "img/proyectos/guido_0126.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.9069
       },
       {
+        "src": "img/proyectos/guido_0160.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0128.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0129.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
+        "src": "img/proyectos/guido_0167.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0131.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0023.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0024.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0025.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0026.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0074.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0075.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0021.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0022.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0134.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0134.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0135.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0136.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.7069
       },
       {
         "src": "img/proyectos/guido_0137.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
         "src": "img/proyectos/guido_0138.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0139.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.8003
       },
       {
+        "src": "img/proyectos/guido_0140.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0141.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0148.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0149.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0150.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0151.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0074.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0075.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0023.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0024.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0027.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0028.jpg",
+        "alt": "suave-lomito — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
         "src": "img/proyectos/guido_0021.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0022.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0023.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0027.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0028.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0074.jpg",
-        "alt": "SUAVE LOMITO — Guido Castellotti",
-        "caption": "SUAVE LOMITO",
+        "alt": "suave-lomito — Guido Castellotti",
         "aspectRatio": 1.5
       }
     ]
@@ -1491,7 +1688,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA EN EXTERIOR"
+        "text": "FOTOGRAFÍA EN EXTERIOR",
+        "html": "<div class=\"title\"><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">FOTOGRAFÍA EN EXTERIOR </span></span></span>"
       },
       {
         "type": "media_collection",
@@ -1526,7 +1724,8 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES"
+        "text": "DISEÑO DE PIEZAS PARA REDES SOCIALES",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">DISEÑO DE PIEZAS PARA REDES SOCIALES</span></span></span>"
       },
       {
         "type": "media_collection",
@@ -1561,15 +1760,62 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "BACKSTAGE CALIOPE FAMILY X KERCHAK"
+        "text": "BACKSTAGE CALIOPE FAMILY X KERCHAK",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">BACKSTAGE CALIOPE FAMILY X KERCHAK</span></span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 71,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0177.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0178.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0179.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0180.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0181.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0182.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/6cp3HyEHdEg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/6cp3HyEHdEg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 51,
+        "isVertical": true
       },
       {
         "type": "text",
-        "text": "COBERTURA DE EVENTOS"
+        "text": "COBERTURA DE EVENTOS",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">COBERTURA DE EVENTOS</span></span></span><br>"
       },
       {
         "type": "media_collection",
@@ -1603,82 +1849,131 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 70,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0186.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0187.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
+      },
+      {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/4Jc6ZfQjh4q/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/4Jc6ZfQjh4q/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 100,
+        "isVertical": false
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0169.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0170.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0171.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0172.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0173.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0174.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0175.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1
       },
       {
         "src": "img/proyectos/guido_0176.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1
       },
       {
+        "src": "img/proyectos/guido_0177.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0178.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0179.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0180.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0181.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0182.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
         "src": "img/proyectos/guido_0183.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0184.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0184.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0185.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kerchak — Guido Castellotti",
         "aspectRatio": 1.5
+      },
+      {
+        "src": "img/proyectos/guido_0186.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0187.jpg",
+        "alt": "kerchak — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -1700,83 +1995,89 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "ROSARIO 2018 - GLADYSON PANTHER"
+        "text": "ROSARIO 2018 - GLADYSON PANTHER",
+        "html": "<div><span style=\"color:#000000;\" class=\"texteditor-inline-color\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\">ROSARIO 2018 - GLADYSON PANTHER</span></span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0197.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0198.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0199.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0200.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0201.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0202.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/NUTmDvpDqdo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/NUTmDvpDqdo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 100,
+        "isVertical": false
       }
     ],
     "gallery": [
       {
-        "src": "img/proyectos/guido_0154.gif",
-        "title": "GLADYSON PANTHER — 01",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0197.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0155.gif",
-        "title": "GLADYSON PANTHER — 02",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0198.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0156.gif",
-        "title": "GLADYSON PANTHER — 03",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0199.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0157.gif",
-        "title": "GLADYSON PANTHER — 04",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0200.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0158.gif",
-        "title": "GLADYSON PANTHER — 05",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0201.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0159.gif",
-        "title": "GLADYSON PANTHER — 06",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0027.jpg",
-        "title": "GLADYSON PANTHER — 07",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0028.jpg",
-        "title": "GLADYSON PANTHER — 08",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0074.jpg",
-        "title": "GLADYSON PANTHER — 09",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0075.jpg",
-        "title": "GLADYSON PANTHER — 10",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0025.jpg",
-        "title": "GLADYSON PANTHER — 11",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0026.jpg",
-        "title": "GLADYSON PANTHER — 12",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0021.jpg",
-        "title": "GLADYSON PANTHER — 13",
-        "tag": "Proyectos Integrales"
-      },
-      {
-        "src": "img/proyectos/guido_0022.jpg",
-        "title": "GLADYSON PANTHER — 14",
-        "tag": "Proyectos Integrales"
+        "src": "img/proyectos/guido_0202.jpg",
+        "alt": "gladyson-panther — Guido Castellotti",
+        "aspectRatio": 1.7778
       }
     ]
   },
@@ -1798,133 +2099,67 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "VIDEO"
+        "text": "VIDEO",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">VIDEO</span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 65,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0212.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0213.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0214.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0215.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/TGdSI_dCRcE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/TGdSI_dCRcE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
-        "src": "img/proyectos/guido_0161.gif",
-        "title": "LIRA BIKES — 01",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0212.jpg",
+        "alt": "lira-bikes — Guido Castellotti",
+        "aspectRatio": 0.5625
       },
       {
-        "src": "img/proyectos/guido_0162.gif",
-        "title": "LIRA BIKES — 02",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0213.jpg",
+        "alt": "lira-bikes — Guido Castellotti",
+        "aspectRatio": 0.5625
       },
       {
-        "src": "img/proyectos/guido_0163.gif",
-        "title": "LIRA BIKES — 03",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0214.jpg",
+        "alt": "lira-bikes — Guido Castellotti",
+        "aspectRatio": 0.5625
       },
       {
-        "src": "img/proyectos/guido_0164.gif",
-        "title": "LIRA BIKES — 04",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0165.jpg",
-        "title": "LIRA BIKES — 05",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0166.jpg",
-        "title": "LIRA BIKES — 06",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0160.jpg",
-        "title": "LIRA BIKES — 07",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0167.jpg",
-        "title": "LIRA BIKES — 08",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0168.jpg",
-        "title": "LIRA BIKES — 09",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0169.jpg",
-        "title": "LIRA BIKES — 10",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0170.jpg",
-        "title": "LIRA BIKES — 11",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0171.jpg",
-        "title": "LIRA BIKES — 12",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0172.jpg",
-        "title": "LIRA BIKES — 13",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0173.jpg",
-        "title": "LIRA BIKES — 14",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0174.jpg",
-        "title": "LIRA BIKES — 15",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0175.jpg",
-        "title": "LIRA BIKES — 16",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0176.jpg",
-        "title": "LIRA BIKES — 17",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0177.jpg",
-        "title": "LIRA BIKES — 18",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0178.jpg",
-        "title": "LIRA BIKES — 19",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0179.jpg",
-        "title": "LIRA BIKES — 20",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0180.jpg",
-        "title": "LIRA BIKES — 21",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0181.jpg",
-        "title": "LIRA BIKES — 22",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0182.jpg",
-        "title": "LIRA BIKES — 23",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0183.jpg",
-        "title": "LIRA BIKES — 24",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0215.jpg",
+        "alt": "lira-bikes — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -1950,7 +2185,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "SF 2235"
+        "text": "SF 2235",
+        "html": "<div style=\"line-height:45px;\" class=\"texteditor-inline-lineheight\"><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">SF 2235</span></span></span>"
       },
       {
         "type": "media_collection",
@@ -2065,11 +2301,14 @@ const PROJECTS_DATA = [
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/LyeMgIyDjDg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/LyeMgIyDjDg/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 100,
+        "isVertical": false
       },
       {
         "type": "text",
-        "text": "INFORMES AVANCE DE OBRA"
+        "text": "INFORMES AVANCE DE OBRA",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">INFORMES AVANCE DE OBRA</span></span></span><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\"><br></span></span></span>"
       },
       {
         "type": "media_collection",
@@ -2098,11 +2337,12 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "RZ 1428"
+        "text": "RZ 1428",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">RZ 1428</span></span></span>"
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -2121,7 +2361,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -2140,7 +2380,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -2159,7 +2399,8 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "EVENTO INAUGURACIÓN"
+        "text": "EVENTO INAUGURACIÓN",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">EVENTO INAUGURACIÓN</span></span></span><br>"
       },
       {
         "type": "media_collection",
@@ -2193,16 +2434,25 @@ const PROJECTS_DATA = [
         ]
       },
       {
-        "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/9An6wjeopn4/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "type": "tree",
+        "children": []
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/GJ_93ZhWG7e/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/9An6wjeopn4/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 80,
+        "isVertical": true
+      },
+      {
+        "type": "video",
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/GJ_93ZhWG7e/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 80,
+        "isVertical": true
       },
       {
         "type": "text",
-        "text": "INFORMES AVANCE DE OBRA"
+        "text": "INFORMES AVANCE DE OBRA",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">INFORMES AVANCE DE OBRA</span></span></span>"
       },
       {
         "type": "media_collection",
@@ -2231,206 +2481,181 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "TRAMA COLÓN"
+        "text": "TRAMA COLÓN",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">TRAMA COLÓN</span></span></span><br>"
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/MWv4H3MM6vB/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/MWv4H3MM6vB/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 70,
+        "isVertical": true
       },
       {
         "type": "text",
-        "text": "EDIFICIO CAFFE"
+        "text": "EDIFICIO CAFFE",
+        "html": "<div><span style=\"font-size:30px;\" class=\"texteditor-inline-fontsize\"><span style=\"font-family:sfjq; font-weight:700;\"><span style=\"color:#1f1f1f;\" class=\"texteditor-inline-color\">EDIFICIO CAFFE</span></span></span><br>"
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/Bu6DSQnwWBE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/Bu6DSQnwWBE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 70,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0220.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.5627
       },
       {
         "src": "img/proyectos/guido_0221.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0222.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0223.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0224.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.5617
       },
       {
         "src": "img/proyectos/guido_0225.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0226.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0227.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0228.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0229.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0230.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0231.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0232.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0233.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0234.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0235.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       },
       {
         "src": "img/proyectos/guido_0236.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       },
       {
         "src": "img/proyectos/guido_0237.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       },
       {
         "src": "img/proyectos/guido_0238.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0239.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0240.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6576
       },
       {
         "src": "img/proyectos/guido_0241.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0242.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0178.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0179.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0180.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0181.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0172.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0173.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       },
       {
         "src": "img/proyectos/guido_0160.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       },
       {
         "src": "img/proyectos/guido_0167.jpg",
-        "alt": "CMS ARQUITECTAS — Guido Castellotti",
-        "caption": "CMS ARQUITECTAS",
+        "alt": "cms-arquitectas — Guido Castellotti",
         "aspectRatio": 1.3813
       }
     ]
@@ -2451,7 +2676,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA E-COMMERCE"
+        "text": "FOTOGRAFÍA E-COMMERCE",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:600;\"><span style=\"font-size:29px;\">FOTOGRAFÍA E-COMMERCE</span></span>"
       },
       {
         "type": "media_collection",
@@ -2610,11 +2836,12 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "CONTENIDO AUDIOVISUAL PARA REDES"
+        "text": "CONTENIDO AUDIOVISUAL PARA REDES",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:600;\"><span style=\"font-size:29px;\" class=\"texteditor-inline-fontsize\">CONTENIDO AUDIOVISUAL PARA REDES</span></span>"
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -2654,146 +2881,122 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0176.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0177.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0160.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0167.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0178.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.7503
       },
       {
         "src": "img/proyectos/guido_0179.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.7503
       },
       {
         "src": "img/proyectos/guido_0165.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0166.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0182.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0183.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0215.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.7143
       },
       {
         "src": "img/proyectos/guido_0216.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.7143
       },
       {
         "src": "img/proyectos/guido_0170.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0171.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0174.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0175.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0172.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0173.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0254.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0254.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0255.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0256.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0257.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0258.jpg",
-        "alt": "DEGË MUEBLES — Guido Castellotti",
-        "caption": "DEGË MUEBLES",
+        "alt": "dege-muebles — Guido Castellotti",
         "aspectRatio": 1.5
       }
     ]
@@ -2816,7 +3019,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "COBERTURA FOTOGRÁFICA"
+        "text": "COBERTURA FOTOGRÁFICA",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:600;\"><span style=\"font-size:29px;\">COBERTURA FOTOGRÁFICA</span></span>"
       },
       {
         "type": "media_collection",
@@ -2863,49 +3067,108 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "COBERTURA AUDIOVISUAL"
+        "text": "COBERTURA AUDIOVISUAL",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:500;\"><span style=\"font-size:29px;\" class=\"texteditor-inline-fontsize\">COBERTURA AUDIOVISUAL</span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0265.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0266.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0267.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0268.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0269.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/RY-QzeQ44gD/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/RY-QzeQ44gD/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0173.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0261.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0262.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0262.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0263.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0264.jpg",
-        "alt": "KARMA NEGRO PELÍCULA — Guido Castellotti",
-        "caption": "KARMA NEGRO PELÍCULA",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
         "aspectRatio": 1.5
+      },
+      {
+        "src": "img/proyectos/guido_0265.jpg",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0266.jpg",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0267.jpg",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0268.jpg",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0269.jpg",
+        "alt": "karma-negro-pelicula — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -2923,6 +3186,16 @@ const PROJECTS_DATA = [
     "alt": "AU EXCLUSIVE — Guido Castellotti",
     "videos": [],
     "modules": [
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0167.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
       {
         "type": "media_collection",
         "maxImages": 2,
@@ -2969,39 +3242,38 @@ const PROJECTS_DATA = [
     ],
     "gallery": [
       {
+        "src": "img/proyectos/guido_0167.jpg",
+        "alt": "au-exclusive — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0272.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0272.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0273.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0274.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0275.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0276.jpg",
-        "alt": "AU EXCLUSIVE — Guido Castellotti",
-        "caption": "AU EXCLUSIVE",
+        "alt": "au-exclusive — Guido Castellotti",
         "aspectRatio": 0.6667
       }
     ]
@@ -3091,62 +3363,52 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0180.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0181.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0160.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0167.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0178.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0179.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0174.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0175.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0215.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0216.jpg",
-        "alt": "MIRENKA — Guido Castellotti",
-        "caption": "MIRENKA",
+        "alt": "mirenka — Guido Castellotti",
         "aspectRatio": 0.6667
       }
     ]
@@ -3169,7 +3431,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA"
+        "text": "FOTOGRAFÍA",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:600;\"><span style=\"font-size:29px;\"><span class=\"texteditor-inline-color\" style=\"color:#1b1919;\">FOTOGRAFÍA</span> </span></span>"
       },
       {
         "type": "media_collection",
@@ -3216,49 +3479,119 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "VIDEO"
+        "text": "VIDEO",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">VIDEO</span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0165.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0166.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0182.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0183.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0172.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0173.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/5E_JJkFG2pW/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/5E_JJkFG2pW/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0217.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0218.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0180.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0181.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0215.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0216.jpg",
-        "alt": "ANTIPOP — Guido Castellotti",
-        "caption": "ANTIPOP",
+        "alt": "anti-pop — Guido Castellotti",
         "aspectRatio": 0.6667
+      },
+      {
+        "src": "img/proyectos/guido_0165.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0166.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0182.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0183.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0172.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0173.jpg",
+        "alt": "anti-pop — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -3282,305 +3615,443 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "CONTENIDO HORIZONTAL PARA VENTA"
+        "text": "CONTENIDO HORIZONTAL PARA VENTA",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">CONTENIDO HORIZONTAL PARA VENTA</span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0354.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0355.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0356.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0357.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0358.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0359.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0360.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0361.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0180.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0181.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0170.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0171.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0160.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0167.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0178.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0179.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0215.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0216.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0182.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0183.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0165.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0166.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0168.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0169.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
       },
       {
         "type": "text",
-        "text": "CÁPSULAS PARA REDES SOCIALES"
+        "text": "CÁPSULAS PARA REDES SOCIALES",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">CÁPSULAS PARA REDES SOCIALES</span><br>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0174.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0175.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0172.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0173.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0374.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0374.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0375.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0376.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0377.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0378.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0379.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0380.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/BybEdPwNZKY/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/BybEdPwNZKY/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/PT56ACs7iPj/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/PT56ACs7iPj/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/NGSgHb_oHpr/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/NGSgHb_oHpr/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
-        "src": "img/proyectos/guido_0284.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 01",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0354.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0285.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 02",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0355.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0286.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 03",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0356.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0287.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 04",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0357.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0288.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 05",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0358.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0289.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 06",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0359.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0290.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 07",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0360.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0291.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 08",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0292.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 09",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0293.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 10",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0294.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 11",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0295.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 12",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0296.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 13",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0297.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 14",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0298.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 15",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0299.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 16",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0300.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 17",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0301.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 18",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0302.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 19",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0303.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 20",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0304.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 21",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0305.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 22",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0306.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 23",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0307.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 24",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0308.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 25",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0309.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 26",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0310.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 27",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0311.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 28",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0312.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 29",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0313.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 30",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0314.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 31",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0315.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 32",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0316.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 33",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0317.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 34",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0318.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 35",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0319.gif",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 36",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0361.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0180.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 37",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0181.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 38",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0170.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0171.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0160.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 39",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0167.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 40",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0178.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 41",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0179.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 42",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0174.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 43",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0175.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 44",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0215.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 45",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0216.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 46",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0182.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 47",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0183.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 48",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0168.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 49",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0169.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 50",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0217.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 51",
-        "tag": "Fotografía y Video"
-      },
-      {
-        "src": "img/proyectos/guido_0218.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 52",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0165.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 53",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
         "src": "img/proyectos/guido_0166.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 54",
-        "tag": "Fotografía y Video"
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0176.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 55",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0168.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
       },
       {
-        "src": "img/proyectos/guido_0177.jpg",
-        "title": "BRASIL┃ON TENTACIÓN TURISMO — 56",
-        "tag": "Fotografía y Video"
+        "src": "img/proyectos/guido_0169.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0174.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0175.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0172.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0173.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0374.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0374.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0375.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0376.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0377.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0378.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0379.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0380.jpg",
+        "alt": "on-tentacion-turismo — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -3603,7 +4074,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA EN ESTUDIO"
+        "text": "FOTOGRAFÍA EN ESTUDIO",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:500;\"><span style=\"font-size:29px;\">FOTOGRAFÍA EN ESTUDIO</span></span>"
       },
       {
         "type": "media_collection",
@@ -3650,7 +4122,8 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "COBERTURA PARTIDOS"
+        "text": "COBERTURA PARTIDOS",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq; font-weight:500;\"><span style=\"font-size:29px;\">COBERTURA PARTIDOS</span></span>"
       },
       {
         "type": "media_collection",
@@ -3684,74 +4157,214 @@ const PROJECTS_DATA = [
         ]
       },
       {
-        "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/CDGGU8bNCqj/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "type": "media_collection",
+        "maxImages": 2,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0215.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0216.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0160.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0167.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0168.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0169.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/Uc-fjoTtSAE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/CDGGU8bNCqj/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 100,
+        "isVertical": false
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0217.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0218.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0172.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0173.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0180.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0181.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/Uc-fjoTtSAE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0411.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0412.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0413.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0414.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0415.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0416.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0174.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0175.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0170.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0171.jpg",
-        "alt": "SONDER — Guido Castellotti",
-        "caption": "SONDER",
+        "alt": "sonder — Guido Castellotti",
         "aspectRatio": 0.6667
+      },
+      {
+        "src": "img/proyectos/guido_0215.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0216.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0160.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0167.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0168.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0169.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0217.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0218.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0172.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0173.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0180.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0181.jpg",
+        "alt": "sonder — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -3773,7 +4386,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FOTOGRAFÍA"
+        "text": "FOTOGRAFÍA",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:600;\"><span style=\"font-size:29px;\"><span class=\"texteditor-inline-color\" style=\"color:#1b1919;\">FOTOGRAFÍA</span> </span></span>"
       },
       {
         "type": "media_collection",
@@ -3904,133 +4518,255 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "VIDEO"
+        "text": "VIDEO",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">VIDEO</span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0432.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0434.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0435.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0436.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0437.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0439.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0440.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0441.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0442.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0444.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0445.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0446.jpg",
+            "width": 720,
+            "height": 1280,
+            "aspectRatio": 0.5625
+          }
+        ]
       },
       {
         "type": "video",
-        "src": "https://www-ccv.adobe.io/v1/player/ccv/5fL7w7D3cpP/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+        "src": "https://www-ccv.adobe.io/v1/player/ccv/5fL7w7D3cpP/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View",
+        "widthPercent": 60,
+        "isVertical": true
       }
     ],
     "gallery": [
       {
         "src": "img/proyectos/guido_0176.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.4895
       },
       {
         "src": "img/proyectos/guido_0177.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0215.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0216.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0180.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0181.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0165.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0166.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0168.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0169.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0174.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0175.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0160.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0167.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0182.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0183.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0170.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0171.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0431.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0431.jpg",
-        "alt": "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
-        "caption": "URUGUAY┃PANES Y PECES RESTAURANTE",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
         "aspectRatio": 1.5
+      },
+      {
+        "src": "img/proyectos/guido_0432.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0434.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0435.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0436.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0437.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0439.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0440.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0441.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0442.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0444.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0445.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0446.jpg",
+        "alt": "panes-y-peces-restaurante-uruguay — Guido Castellotti",
+        "aspectRatio": 0.5625
       }
     ]
   },
@@ -4050,7 +4786,8 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "Réplica Colectiva Gráfica"
+        "text": "Réplica Colectiva Gráfica",
+        "html": "<div class=\"title\"><span style=\"font-size:29px;\">Réplica Colectiva Gráfica</span>"
       },
       {
         "type": "media_collection",
@@ -4132,8 +4869,34 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0484.jpg",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0485.jpg",
+            "width": 253,
+            "height": 450,
+            "aspectRatio": 0.5622
+          },
+          {
+            "src": "img/proyectos/guido_0485.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          }
+        ]
+      },
+      {
         "type": "text",
-        "text": "Optativa Entretejiendo lo tangible y lo intangible"
+        "text": "Optativa Entretejiendo lo tangible y lo intangible",
+        "html": "<div class=\"sub-title\"><span style=\"font-family:sfjq; font-weight:600;\"><span style=\"font-size:29px;\"><span style=\"color:#1b1919;\" class=\"texteditor-inline-color\"></span></span></span>Optativa Entretejiendo lo tangible y lo intangible"
       },
       {
         "type": "media_collection",
@@ -4199,6 +4962,49 @@ const PROJECTS_DATA = [
             "width": 1200,
             "height": 1800,
             "aspectRatio": 0.6667
+          }
+        ]
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 3,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0471.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0472.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0475.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0476.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0495.jpg",
+            "width": 270,
+            "height": 480,
+            "aspectRatio": 0.5625
+          },
+          {
+            "src": "img/proyectos/guido_0496.jpg",
+            "width": 253,
+            "height": 450,
+            "aspectRatio": 0.5622
           }
         ]
       },
@@ -4285,206 +5091,217 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0472.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0473.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0474.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0475.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0476.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0477.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0478.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0479.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0480.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0481.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0482.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0483.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
+        "src": "img/proyectos/guido_0484.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0485.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5622
+      },
+      {
+        "src": "img/proyectos/guido_0485.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
         "src": "img/proyectos/guido_0486.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0487.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0488.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0489.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0490.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0492.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0493.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0494.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0473.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0474.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
+        "src": "img/proyectos/guido_0471.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0472.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0475.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0476.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0495.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0496.jpg",
+        "alt": "fapyd-unr — Guido Castellotti",
+        "aspectRatio": 0.5622
+      },
+      {
         "src": "img/proyectos/guido_0467.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0468.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0497.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0498.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0499.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0500.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0502.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0503.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0503.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0504.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0505.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
         "src": "img/proyectos/guido_0506.jpg",
-        "alt": "FAPYD (UNR) — Guido Castellotti",
-        "caption": "FAPYD (UNR)",
+        "alt": "fapyd-unr — Guido Castellotti",
         "aspectRatio": 1.5
       }
     ]
@@ -4598,86 +5415,72 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0518.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0519.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0520.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0521.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0522.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0523.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0524.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0525.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0525.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0526.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0527.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0528.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0529.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 0.6669
       },
       {
         "src": "img/proyectos/guido_0530.jpg",
-        "alt": "LILA GRACE — Guido Castellotti",
-        "caption": "LILA GRACE",
+        "alt": "lila-grace — Guido Castellotti",
         "aspectRatio": 1.4994
       }
     ]
@@ -4697,8 +5500,18 @@ const PROJECTS_DATA = [
     "videos": [],
     "modules": [
       {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0572.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4706,8 +5519,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0470.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0573.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4730,7 +5559,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4738,8 +5567,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0471.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0574.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4762,7 +5607,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4770,8 +5615,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0542.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0575.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4794,7 +5655,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4802,8 +5663,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0547.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0576.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4826,7 +5703,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4834,8 +5711,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0467.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0577.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4858,7 +5751,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4866,8 +5759,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0496.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0570.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4890,7 +5799,7 @@ const PROJECTS_DATA = [
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -4898,8 +5807,24 @@ const PROJECTS_DATA = [
             "width": 1754,
             "height": 1240,
             "aspectRatio": 1.4145
+          },
+          {
+            "src": "img/proyectos/guido_0559.jpg",
+            "width": 800,
+            "height": 450,
+            "aspectRatio": 1.7778
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0571.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -4922,134 +5847,189 @@ const PROJECTS_DATA = [
       },
       {
         "type": "text",
-        "text": "Link Visualizer completo"
+        "text": "Link Visualizer completo",
+        "html": "<div class=\"title\"><span style=\"font-family:ftnk;font-weight:800;\">Link Visualizer completo</span>"
       }
     ],
     "gallery": [
       {
+        "src": "img/proyectos/guido_0572.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0469.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0470.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0573.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0474.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.1064
       },
       {
         "src": "img/proyectos/guido_0475.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0476.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0471.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0574.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0540.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.1064
       },
       {
         "src": "img/proyectos/guido_0541.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0541.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0542.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0575.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0544.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.1064
       },
       {
         "src": "img/proyectos/guido_0545.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0546.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0547.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0576.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0472.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.1041
       },
       {
         "src": "img/proyectos/guido_0469.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0470.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0467.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0577.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0473.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.103
       },
       {
         "src": "img/proyectos/guido_0474.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0495.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0496.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0570.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0557.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.1041
       },
       {
         "src": "img/proyectos/guido_0558.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0559.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.4145
       },
       {
+        "src": "img/proyectos/guido_0559.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0571.jpg",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0561.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 2.103
       },
       {
         "src": "img/proyectos/guido_0562.jpg",
-        "alt": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "NASIR CATRIEL Y FASCIOLO BALLET PARA LAS MASAS",
+        "alt": "ballet-para-las-masas — Guido Castellotti",
         "aspectRatio": 1.3953
       }
     ]
@@ -5069,8 +6049,28 @@ const PROJECTS_DATA = [
     "videos": [],
     "modules": [
       {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0591.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0568.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -5088,8 +6088,38 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0569.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0566.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0567.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -5105,32 +6135,68 @@ const PROJECTS_DATA = [
             "aspectRatio": 1.3333
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0576.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       }
     ],
     "gallery": [
       {
+        "src": "img/proyectos/guido_0591.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
+        "src": "img/proyectos/guido_0568.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0578.jpg",
-        "alt": "ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0579.jpg",
-        "alt": "ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
+        "src": "img/proyectos/guido_0569.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
+        "src": "img/proyectos/guido_0566.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
+        "src": "img/proyectos/guido_0567.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0583.jpg",
-        "alt": "ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0584.jpg",
-        "alt": "ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
         "aspectRatio": 1.3333
+      },
+      {
+        "src": "img/proyectos/guido_0576.jpg",
+        "alt": "rosario-es-un-eclipse — Guido Castellotti",
+        "aspectRatio": 1
       }
     ]
   },
@@ -5147,167 +6213,173 @@ const PROJECTS_DATA = [
     "mainImage": "img/proyectos/guido_0503.jpg",
     "alt": "DISEÑO EDITORIAL — Guido Castellotti",
     "videos": [],
-    "modules": [],
+    "modules": [
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0577.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0634.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0635.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0636.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0637.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0638.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0639.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0640.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0641.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0642.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0643.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      }
+    ],
     "gallery": [
       {
-        "src": "img/proyectos/guido_0503.jpg",
-        "title": "DISEÑO EDITORIAL — 01",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0577.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0504.jpg",
-        "title": "DISEÑO EDITORIAL — 02",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0634.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0505.jpg",
-        "title": "DISEÑO EDITORIAL — 03",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0635.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0506.jpg",
-        "title": "DISEÑO EDITORIAL — 04",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0636.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0507.jpg",
-        "title": "DISEÑO EDITORIAL — 05",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0637.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0508.jpg",
-        "title": "DISEÑO EDITORIAL — 06",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0638.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0509.jpg",
-        "title": "DISEÑO EDITORIAL — 07",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0639.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0510.jpg",
-        "title": "DISEÑO EDITORIAL — 08",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0640.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0511.jpg",
-        "title": "DISEÑO EDITORIAL — 09",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0641.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0512.jpg",
-        "title": "DISEÑO EDITORIAL — 10",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0642.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       },
       {
-        "src": "img/proyectos/guido_0513.jpg",
-        "title": "DISEÑO EDITORIAL — 11",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0469.jpg",
-        "title": "DISEÑO EDITORIAL — 12",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0470.jpg",
-        "title": "DISEÑO EDITORIAL — 13",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0467.jpg",
-        "title": "DISEÑO EDITORIAL — 14",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0468.jpg",
-        "title": "DISEÑO EDITORIAL — 15",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0495.jpg",
-        "title": "DISEÑO EDITORIAL — 16",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0496.jpg",
-        "title": "DISEÑO EDITORIAL — 17",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0471.jpg",
-        "title": "DISEÑO EDITORIAL — 18",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0472.jpg",
-        "title": "DISEÑO EDITORIAL — 19",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0475.jpg",
-        "title": "DISEÑO EDITORIAL — 20",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0476.jpg",
-        "title": "DISEÑO EDITORIAL — 21",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0514.jpg",
-        "title": "DISEÑO EDITORIAL — 22",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0515.jpg",
-        "title": "DISEÑO EDITORIAL — 23",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0516.jpg",
-        "title": "DISEÑO EDITORIAL — 24",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0517.jpg",
-        "title": "DISEÑO EDITORIAL — 25",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0518.jpg",
-        "title": "DISEÑO EDITORIAL — 26",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0519.jpg",
-        "title": "DISEÑO EDITORIAL — 27",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0520.jpg",
-        "title": "DISEÑO EDITORIAL — 28",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0521.jpg",
-        "title": "DISEÑO EDITORIAL — 29",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0522.jpg",
-        "title": "DISEÑO EDITORIAL — 30",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0523.jpg",
-        "title": "DISEÑO EDITORIAL — 31",
-        "tag": "Diseño"
-      },
-      {
-        "src": "img/proyectos/guido_0524.jpg",
-        "title": "DISEÑO EDITORIAL — 32",
-        "tag": "Diseño"
+        "src": "img/proyectos/guido_0643.jpg",
+        "alt": "diseno-editorial-de-revista — Guido Castellotti",
+        "aspectRatio": 1
       }
     ]
   },
@@ -5415,74 +6487,62 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0616.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0617.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0618.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0619.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0620.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.7072
       },
       {
         "src": "img/proyectos/guido_0621.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0622.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0623.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0624.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0625.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0626.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       },
       {
         "src": "img/proyectos/guido_0627.jpg",
-        "alt": "GYOR — Guido Castellotti",
-        "caption": "GYOR",
+        "alt": "gyor — Guido Castellotti",
         "aspectRatio": 0.707
       }
     ]
@@ -5502,8 +6562,18 @@ const PROJECTS_DATA = [
     "videos": [],
     "modules": [
       {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0646.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 2,
         "widthPercent": 100,
         "images": [
           {
@@ -5523,15 +6593,18 @@ const PROJECTS_DATA = [
     ],
     "gallery": [
       {
+        "src": "img/proyectos/guido_0646.jpg",
+        "alt": "kid-kerchak — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0628.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kid-kerchak — Guido Castellotti",
         "aspectRatio": 1.3333
       },
       {
         "src": "img/proyectos/guido_0629.jpg",
-        "alt": "KERCHAK — Guido Castellotti",
-        "caption": "KERCHAK",
+        "alt": "kid-kerchak — Guido Castellotti",
         "aspectRatio": 0.5625
       }
     ]
@@ -5552,11 +6625,22 @@ const PROJECTS_DATA = [
     "modules": [
       {
         "type": "text",
-        "text": "FLYERS"
+        "text": "FLYERS",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:500;\"><span style=\"font-size:29px;\">FLYERS</span></span>"
+      },
+      {
+        "type": "image",
+        "widthPercent": 71,
+        "image": {
+          "src": "img/proyectos/guido_0647.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
-        "maxImages": 3,
+        "maxImages": 1,
         "widthPercent": 100,
         "images": [
           {
@@ -5566,6 +6650,16 @@ const PROJECTS_DATA = [
             "aspectRatio": 1.5
           }
         ]
+      },
+      {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0648.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
       },
       {
         "type": "media_collection",
@@ -5593,34 +6687,158 @@ const PROJECTS_DATA = [
         ]
       },
       {
+        "type": "image",
+        "widthPercent": 100,
+        "image": {
+          "src": "img/proyectos/guido_0649.jpg",
+          "width": null,
+          "height": null,
+          "aspectRatio": 1
+        }
+      },
+      {
         "type": "text",
-        "text": "ANIMACIÓN DE LOGOS"
+        "text": "ANIMACIÓN DE LOGOS",
+        "html": "<div class=\"title\"><span style=\"font-family:sfjq;font-weight:500;\"><span style=\"font-size:29px;\">ANIMACIÓN DE LOGOS</span></span>"
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 4,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0650.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0651.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0652.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0653.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
+      },
+      {
+        "type": "media_collection",
+        "maxImages": 4,
+        "widthPercent": 100,
+        "images": [
+          {
+            "src": "img/proyectos/guido_0654.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0655.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0656.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          },
+          {
+            "src": "img/proyectos/guido_0657.gif",
+            "width": 480,
+            "height": 270,
+            "aspectRatio": 1.7778
+          }
+        ]
       }
     ],
     "gallery": [
       {
+        "src": "img/proyectos/guido_0647.jpg",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0630.jpg",
-        "alt": "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
-        "caption": "FESTIVAL NO PARO NI A PALO'",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
         "aspectRatio": 1.5
       },
       {
+        "src": "img/proyectos/guido_0648.jpg",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
         "src": "img/proyectos/guido_0631.jpg",
-        "alt": "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
-        "caption": "FESTIVAL NO PARO NI A PALO'",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0632.jpg",
-        "alt": "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
-        "caption": "FESTIVAL NO PARO NI A PALO'",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
         "aspectRatio": 0.5625
       },
       {
         "src": "img/proyectos/guido_0633.jpg",
-        "alt": "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
-        "caption": "FESTIVAL NO PARO NI A PALO'",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
         "aspectRatio": 0.5625
+      },
+      {
+        "src": "img/proyectos/guido_0649.jpg",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1
+      },
+      {
+        "src": "img/proyectos/guido_0650.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0651.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0652.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0653.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0654.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0655.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0656.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
+      },
+      {
+        "src": "img/proyectos/guido_0657.gif",
+        "alt": "no-paro-ni-a-palo — Guido Castellotti",
+        "aspectRatio": 1.7778
       }
     ]
   },
@@ -5691,44 +6909,37 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0593.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0594.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.7541
       },
       {
         "src": "img/proyectos/guido_0595.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0596.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0597.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0598.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.7541
       },
       {
         "src": "img/proyectos/guido_0599.jpg",
-        "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
-        "caption": "FOTOGRAFÍA IMPRESA",
+        "alt": "print — Guido Castellotti",
         "aspectRatio": 0.667
       }
     ]
@@ -5782,26 +6993,22 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0600.jpg",
-        "alt": "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "PRINT ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse-print — Guido Castellotti",
         "aspectRatio": 0.6667
       },
       {
         "src": "img/proyectos/guido_0601.jpg",
-        "alt": "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "PRINT ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse-print — Guido Castellotti",
         "aspectRatio": 0.7541
       },
       {
         "src": "img/proyectos/guido_0602.jpg",
-        "alt": "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "PRINT ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse-print — Guido Castellotti",
         "aspectRatio": 0.7541
       },
       {
         "src": "img/proyectos/guido_0603.jpg",
-        "alt": "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
-        "caption": "PRINT ROSARIO ES UN ECLIPSE",
+        "alt": "rosario-es-un-eclipse-print — Guido Castellotti",
         "aspectRatio": 0.7541
       }
     ]
@@ -5866,6 +7073,12 @@ const PROJECTS_DATA = [
             "width": 1920,
             "height": 1427,
             "aspectRatio": 1.3455
+          },
+          {
+            "src": "img/proyectos/guido_0645.gif",
+            "width": 356,
+            "height": 480,
+            "aspectRatio": 0.7417
           }
         ]
       }
@@ -5873,45 +7086,43 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0604.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3953
       },
       {
         "src": "img/proyectos/guido_0605.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
       },
       {
         "src": "img/proyectos/guido_0606.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
       },
       {
         "src": "img/proyectos/guido_0607.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
       },
       {
         "src": "img/proyectos/guido_0608.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
       },
       {
         "src": "img/proyectos/guido_0609.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
       },
       {
         "src": "img/proyectos/guido_0610.jpg",
-        "alt": "ZINE INFIERNOS — Guido Castellotti",
-        "caption": "ZINE INFIERNOS",
+        "alt": "fanzine — Guido Castellotti",
         "aspectRatio": 1.3455
+      },
+      {
+        "src": "img/proyectos/guido_0645.gif",
+        "alt": "fanzine — Guido Castellotti",
+        "aspectRatio": 0.7417
       }
     ]
   },
@@ -5939,6 +7150,12 @@ const PROJECTS_DATA = [
             "width": 1500,
             "height": 1875,
             "aspectRatio": 0.8
+          },
+          {
+            "src": "img/proyectos/guido_0644.gif",
+            "width": 356,
+            "height": 480,
+            "aspectRatio": 0.7417
           },
           {
             "src": "img/proyectos/guido_0612.jpg",
@@ -5970,38 +7187,37 @@ const PROJECTS_DATA = [
     "gallery": [
       {
         "src": "img/proyectos/guido_0611.jpg",
-        "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "ZINE BALLET PARA LAS MASAS",
+        "alt": "fanzine-bpm — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
+        "src": "img/proyectos/guido_0644.gif",
+        "alt": "fanzine-bpm — Guido Castellotti",
+        "aspectRatio": 0.7417
+      },
+      {
         "src": "img/proyectos/guido_0612.jpg",
-        "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "ZINE BALLET PARA LAS MASAS",
+        "alt": "fanzine-bpm — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0613.jpg",
-        "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "ZINE BALLET PARA LAS MASAS",
+        "alt": "fanzine-bpm — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0614.jpg",
-        "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "ZINE BALLET PARA LAS MASAS",
+        "alt": "fanzine-bpm — Guido Castellotti",
         "aspectRatio": 0.8
       },
       {
         "src": "img/proyectos/guido_0615.jpg",
-        "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
-        "caption": "ZINE BALLET PARA LAS MASAS",
+        "alt": "fanzine-bpm — Guido Castellotti",
         "aspectRatio": 0.8
       }
     ]
   }
 ];
-
 // Dimensiones exactas para videos de Adobe CCV
 const VIDEO_METADATA = {
   "6cp3HyEHdEg": { width: 1080, height: 1920, isVertical: true },
@@ -6031,13 +7247,13 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjectDetail();
 });
 
-function createVideoWrapper(vUrl) {
+function createVideoWrapper(vUrl, isVerticalHint = false) {
   const wrap = document.createElement('div');
   wrap.className = 'project-video-wrapper';
 
   const match = vUrl.match(/\/ccv\/([^/?#]+)/);
-  let isVertical = false;
-  let aspectStyle = '16 / 9';
+  let isVertical = isVerticalHint;
+  let aspectStyle = isVertical ? '9 / 16' : '16 / 9';
 
   if (match && VIDEO_METADATA[match[1]]) {
     const meta = VIDEO_METADATA[match[1]];
@@ -6126,7 +7342,7 @@ function renderProjectDetail() {
     if (curatorialSection) curatorialSection.style.display = 'none';
   }
 
-  // 4. Renderizado del Álbum Modular (Estructura original de Adobe Portfolio)
+  // 4. Renderizado del Álbum Modular (Estructura EXACTA 1:1 original de Adobe Portfolio)
   const albumContainer = document.getElementById('projectAlbumContainer');
   if (albumContainer) {
     albumContainer.innerHTML = '';
@@ -6142,24 +7358,58 @@ function renderProjectDetail() {
         if (mod.type === 'text') {
           const subWrap = document.createElement('div');
           subWrap.className = 'project-module-subtitle';
-          subWrap.innerHTML = `<h3>${mod.text}</h3>`;
+          if (mod.text && mod.text.toLowerCase().includes('visualizer completo')) {
+            subWrap.innerHTML = `<h3><a href="https://www.youtube.com/watch?v=4t4Bgquov6c" target="_blank" rel="noopener noreferrer" class="project-external-link">Link Visualizer completo ↗</a></h3>`;
+          } else {
+            subWrap.innerHTML = `<h3>${mod.text}</h3>`;
+          }
           albumContainer.appendChild(subWrap);
           i++;
         } else if (mod.type === 'video') {
-          // Si hay videos consecutivos, agruparlos en un project-video-container flexible
           const vidContainer = document.createElement('div');
           vidContainer.className = 'project-video-container';
+          if (mod.widthPercent && mod.widthPercent < 100) {
+            vidContainer.style.maxWidth = `${mod.widthPercent}%`;
+            vidContainer.style.margin = '0 auto';
+          }
           while (i < modules.length && modules[i].type === 'video') {
-            vidContainer.appendChild(createVideoWrapper(modules[i].src));
+            vidContainer.appendChild(createVideoWrapper(modules[i].src, modules[i].isVertical));
             i++;
           }
           albumContainer.appendChild(vidContainer);
+        } else if (mod.type === 'image') {
+          const singleRow = document.createElement('div');
+          singleRow.className = 'project-album-row cols-1';
+          if (mod.widthPercent && mod.widthPercent < 100) {
+            singleRow.style.maxWidth = `${mod.widthPercent}%`;
+            singleRow.style.marginLeft = 'auto';
+            singleRow.style.marginRight = 'auto';
+          }
+          const thisIdx = globalGalleryIndex++;
+          const frame = document.createElement('div');
+          frame.className = 'album-item-frame';
+          frame.title = 'Hacer clic para ampliar en tamaño real';
+
+          const img = document.createElement('img');
+          img.src = mod.image.src;
+          img.alt = `${currentProject.title} — Guido Castellotti`;
+          img.className = 'album-item-img';
+          img.loading = 'lazy';
+          img.draggable = false;
+
+          frame.appendChild(img);
+          frame.addEventListener('click', () => openLightbox(thisIdx));
+          singleRow.appendChild(frame);
+          albumContainer.appendChild(singleRow);
+          i++;
         } else if (mod.type === 'media_collection') {
           const row = document.createElement('div');
           const maxCols = Math.min(Math.max(mod.maxImages || 3, 1), 5);
           row.className = `project-album-row cols-${maxCols}`;
           if (mod.widthPercent && mod.widthPercent < 100) {
             row.style.maxWidth = `${mod.widthPercent}%`;
+            row.style.marginLeft = 'auto';
+            row.style.marginRight = 'auto';
           }
 
           mod.images.forEach(imgData => {
@@ -6176,21 +7426,44 @@ function renderProjectDetail() {
             img.draggable = false;
 
             frame.appendChild(img);
-            frame.addEventListener('click', () => {
-              openLightbox(thisIdx);
-            });
-
+            frame.addEventListener('click', () => openLightbox(thisIdx));
             row.appendChild(frame);
           });
 
           albumContainer.appendChild(row);
+          i++;
+        } else if (mod.type === 'tree') {
+          const treeContainer = document.createElement('div');
+          treeContainer.className = 'project-tree-container';
+          if (mod.children) {
+            mod.children.forEach(child => {
+              const childWrap = document.createElement('div');
+              childWrap.className = 'project-tree-child';
+              if (child.type === 'video') {
+                childWrap.appendChild(createVideoWrapper(child.src, true));
+              } else if (child.type === 'image') {
+                const thisIdx = globalGalleryIndex++;
+                const frame = document.createElement('div');
+                frame.className = 'album-item-frame';
+                const img = document.createElement('img');
+                img.src = child.image.src;
+                img.alt = `${currentProject.title} — Guido Castellotti`;
+                img.className = 'album-item-img';
+                img.loading = 'lazy';
+                frame.appendChild(img);
+                frame.addEventListener('click', () => openLightbox(thisIdx));
+                childWrap.appendChild(frame);
+              }
+              treeContainer.appendChild(childWrap);
+            });
+          }
+          albumContainer.appendChild(treeContainer);
           i++;
         } else {
           i++;
         }
       }
     } else if (currentProject.gallery && currentProject.gallery.length > 0) {
-      // Fallback para proyectos con galería plana sin módulos
       const row = document.createElement('div');
       row.className = 'project-album-row cols-3';
       currentProject.gallery.forEach(item => {
@@ -6213,7 +7486,7 @@ function renderProjectDetail() {
     }
   }
 
-  // 5. Inicializar Lightbox modal
+  // 5. Inicializar Lightbox modal con la galería exacta completa
   if (currentProject.gallery && currentProject.gallery.length > 0) {
     initLightbox(currentProject.gallery);
   }
@@ -6240,13 +7513,6 @@ function renderProjectDetail() {
     if (nextTitle) nextTitle.textContent = nextProject.title;
   }
 }
-
-/* =========================================================================
-   Controlador del Visualizador Lightbox Modal a Pantalla Completa
-   ========================================================================= */
-let currentLightboxIndex = 0;
-let activeGallery = [];
-let isLightboxInitialized = false;
 
 function initLightbox(gallery) {
   activeGallery = gallery;
