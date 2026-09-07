@@ -1813,8 +1813,8 @@ body.mobile-menu-open .floating-talk-wrapper {
 .gallery-lightbox {
   position: fixed;
   inset: 0;
-  z-index: 3000;
-  display: flex;
+  z-index: 9999;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: clamp(16px, 4vw, 48px);
@@ -1826,6 +1826,7 @@ body.mobile-menu-open .floating-talk-wrapper {
 
 .gallery-lightbox.is-open,
 .gallery-lightbox.active {
+  display: flex;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;

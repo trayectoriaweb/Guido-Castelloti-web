@@ -5227,9 +5227,13 @@ function initLightbox(gallery) {
 
 function openLightbox(index) {
   const lightbox = document.getElementById('galleryLightbox');
-  if (!lightbox) return;
-  lightbox.classList.add('is-open');
-  lightbox.classList.add('active');
+  if (!lightbox) { console.error('[Lightbox] No se encontró #galleryLightbox'); return; }
+  console.log('[Lightbox] Abriendo índice', index);
+  lightbox.style.display = 'flex';
+  lightbox.style.opacity = '1';
+  lightbox.style.visibility = 'visible';
+  lightbox.style.pointerEvents = 'auto';
+  lightbox.classList.add('is-open', 'active');
   lightbox.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
   showLightboxImage(index);
@@ -5238,8 +5242,11 @@ function openLightbox(index) {
 function closeLightbox() {
   const lightbox = document.getElementById('galleryLightbox');
   if (!lightbox) return;
-  lightbox.classList.remove('is-open');
-  lightbox.classList.remove('active');
+  lightbox.style.display = '';
+  lightbox.style.opacity = '';
+  lightbox.style.visibility = '';
+  lightbox.style.pointerEvents = '';
+  lightbox.classList.remove('is-open', 'active');
   lightbox.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
 }
