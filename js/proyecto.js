@@ -1053,7 +1053,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2025",
     "title": "LIRA BIKES",
-    "description": "Producci├│n audiovisual para Lira Bikes en colaboraci├│n con Agustin Men├®ndez, enfocada en destacar los detalles de la bicicleta con un montaje din├ímico, uso de rampas de velocidad y movimientos de gimbal.",
+    "description": "Producción audiovisual para Lira Bikes en colaboración con Agustin Menéndez, enfocada en destacar los detalles de la bicicleta con un montaje dinámico, uso de rampas de velocidad y movimientos de gimbal.",
     "mainImage": "img/proyectos/guido_0160.jpg",
     "alt": "LIRA BIKES — Guido Castellotti",
     "videos": [
@@ -1877,7 +1877,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2022",
     "title": "AU EXCLUSIVE",
-    "description": "Proyecto fotogr├ífico para marca de ropa urbana con ra├¡ces en el hip hop y la vida callejera. La sesi├│n, protagonizada por un graffitero de Rosario, recrea la tensi├│n y el sigilo de la acci├│n en la calle.",
+    "description": "Proyecto fotográfico para marca de ropa urbana con raíces en el hip hop y la vida callejera. La sesión, protagonizada por un graffitero de Rosario, recrea la tensión y el sigilo de la acción en la calle.",
     "mainImage": "img/proyectos/guido_0254.jpg",
     "alt": "AU EXCLUSIVE — Guido Castellotti",
     "videos": [],
@@ -2033,7 +2033,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2025",
     "title": "MIRENKA",
-    "description": "Sesi├│n fotogr├ífica en estudio para emprendimiento de accesorios de aluminio moldeados a mano, con una propuesta visual que transmite naturalidad, calidez y frialdad a trav├®s del juego de luces y sombras.",
+    "description": "Sesión fotográfica en estudio para emprendimiento de accesorios de aluminio moldeados a mano, con una propuesta visual que transmite naturalidad, calidez y frialdad a través del juego de luces y sombras.",
     "mainImage": "img/proyectos/guido_0262.jpg",
     "alt": "MIRENKA — Guido Castellotti",
     "videos": [],
@@ -2199,7 +2199,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2025",
     "title": "ANTIPOP",
-    "description": "Producci├│n de fotograf├¡a y video en Chapadmalal para marca de ropa rosarina. El contenido se realiz├│ en la playa, aprovechando un viaje personal, para acompa├▒ar el lanzamiento de su colecci├│n de verano.",
+    "description": "Producción de fotografía y video en Chapadmalal para marca de ropa rosarina. El contenido se realizó en la playa, aprovechando un viaje personal, para acompañar el lanzamiento de su colección de verano.",
     "mainImage": "img/proyectos/guido_0272.jpg",
     "alt": "ANTIPOP — Guido Castellotti",
     "videos": [
@@ -3515,7 +3515,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2018",
     "title": "LILA GRACE",
-    "description": "Fotograf├¡a en exterior para el lanzamiento de la colecci├│n de verano.",
+    "description": "Fotografía en exterior para el lanzamiento de la colección de verano.",
     "mainImage": "img/proyectos/guido_0417.jpg",
     "alt": "LILA GRACE — Guido Castellotti",
     "videos": [],
@@ -3987,7 +3987,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2026",
     "title": "ROSARIO ES UN ECLIPSE",
-    "description": "Desarrollo de sistema editorial completo: tapa, contratapa, interiores, ├¡ndice, portadas de cap├¡tulo y colof├│n. \r\nRosario es un eclipse es un libro sobre una ciudad atravesada por la violencia sist├®mica y el capitalismo tard├¡o. En ese contexto, la banda rosarina Bubis Vayins aparece como s├¡ntoma y respuesta: ruido, incomodidad y potencia colectiva frente al individualismo dominante. \r\nA partir de conceptos presentes en el libro como ÔÇ£criaturas insurrectasÔÇØ y ÔÇ£b├│lidos cat├írticosÔÇØ, la portada se resolvi├│ como una entidad h├¡brida, radioactiva y sin g├®nero definido: una criatura construida a partir de fragmentos de los cuerpos de cada integrante de la banda, fusionados en una silueta ├║nica.",
+    "description": "Desarrollo de sistema editorial completo: tapa, contratapa, interiores, índice, portadas de capítulo y colofón. \r\nRosario es un eclipse es un libro sobre una ciudad atravesada por la violencia sistémica y el capitalismo tardío. En ese contexto, la banda rosarina Bubis Vayins aparece como síntoma y respuesta: ruido, incomodidad y potencia colectiva frente al individualismo dominante. \r\nA partir de conceptos presentes en el libro como «criaturas insurrectas» y «bólidos catárticos», la portada se resolvió como una entidad híbrida, radioactiva y sin género definido: una criatura construida a partir de fragmentos de los cuerpos de cada integrante de la banda, fusionados en una silueta única.",
     "mainImage": "img/proyectos/guido_0485.jpg",
     "alt": "ROSARIO ES UN ECLIPSE — Guido Castellotti",
     "videos": [],
@@ -4309,7 +4309,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2021",
     "title": "GYOR",
-    "description": "Dise├▒o de cat├ílogo haciendo foco en la jerarquizaci├│n, organizaci├│n de la informaci├│n y definici├│n de una estructura visual ordenada y funcional.",
+    "description": "Diseño de catálogo haciendo foco en la jerarquización, organización de la información y definición de una estructura visual ordenada y funcional.",
     "mainImage": "img/proyectos/guido_0525.jpg",
     "alt": "GYOR — Guido Castellotti",
     "videos": [],
@@ -4435,7 +4435,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2021",
     "title": "KERCHAK",
-    "description": "Dise├▒o de tapa para single el artista de trap KERCHAK . El proyecto parti├│ de una fotograf├¡a propia intervenida con grafitis de Yo Melao. Mi aporte se centr├│ en la organizaci├│n visual, la jerarqu├¡a de los elementos y la creaci├│n gr├ífica de un cartel con el nombre del artista en la fachada.",
+    "description": "Diseño de tapa para single el artista de trap KERCHAK . El proyecto partió de una fotografía propia intervenida con grafitis de Yo Melao. Mi aporte se centró en la organización visual, la jerarquía de los elementos y la creación gráfica de un cartel con el nombre del artista en la fachada.",
     "mainImage": "img/proyectos/guido_0537.jpg",
     "alt": "KERCHAK — Guido Castellotti",
     "videos": [],
@@ -4521,7 +4521,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2024",
     "title": "FESTIVAL NO PARO NI A PALO'",
-    "description": "PROYECTO DE DISE├æO PARA FESTIVAL DE TRAP. \r\nCreaci├│n de piezas gr├íficas para redes sociales e impresi├│n, adem├ís de animaciones de el logo del festival y de los artistas que participaron.",
+    "description": "PROYECTO DE DISEÑO PARA FESTIVAL DE TRAP. \r\nCreación de piezas gráficas para redes sociales e impresión, además de animaciones de el logo del festival y de los artistas que participaron.",
     "mainImage": "img/proyectos/guido_0541.jpg",
     "alt": "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
     "videos": [],
@@ -4677,7 +4677,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2026",
     "title": "FOTOGRAFÍA IMPRESA",
-    "description": "Risograf├¡as A3 en papel obra 120g a una y dos tintas┬á",
+    "description": "Risografías A3 en papel obra 120g a una y dos tintas.",
     "mainImage": "img/proyectos/guido_0559.jpg",
     "alt": "FOTOGRAFÍA IMPRESA — Guido Castellotti",
     "videos": [],
@@ -4758,7 +4758,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2026",
     "title": "PRINT ROSARIO ES UN ECLIPSE",
-    "description": "Prints en formato A3 impresos en risograf├¡a y calcos del al libro ÔÇ£Rosario es un eclipseÔÇØ, obra de la revista cultural Rapto, que aborda una ciudad atravesada por la violencia sist├®mica y el capitalismo tard├¡o, donde la banda rosarina Bubis Vayins sublima una respuesta colectiva frente al individualismo dominante.",
+    "description": "Prints en formato A3 impresos en risografía y calcos del al libro «Rosario es un eclipse», obra de la revista cultural Rapto, que aborda una ciudad atravesada por la violencia sistémica y el capitalismo tardío, donde la banda rosarina Bubis Vayins sublima una respuesta colectiva frente al individualismo dominante.",
     "mainImage": "img/proyectos/guido_0572.jpg",
     "alt": "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
     "videos": [],
@@ -4824,7 +4824,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2026",
     "title": "ZINE INFIERNOS",
-    "description": "ÔÇ£Muchos infiernos, diversos, vi y sin embargo yo aqu├¡ paseoÔÇØ Una selecci├│n de fotograf├¡as realizadas entre 2017 y 2026 en distintas ciudades de Argentina y Uruguay, que combina registros anal├│gicos y digitales.\r\nEl proyecto surge de a├▒os de caminar, observar y fotografiar sin un destino preciso. Las im├ígenes recorren espacios urbanos donde conviven el abandono y la celebraci├│n, la exclusi├│n y el encuentro, la violencia cotidiana y los peque├▒os gestos de ternura que persisten a pesar de todo.",
+    "description": "«Muchos infiernos, diversos, vi y sin embargo yo aquí paseo» Una selección de fotografías realizadas entre 2017 y 2026 en distintas ciudades de Argentina y Uruguay, que combina registros analógicos y digitales.\r\nEl proyecto surge de años de caminar, observar y fotografiar sin un destino preciso. Las imágenes recorren espacios urbanos donde conviven el abandono y la celebración, la exclusión y el encuentro, la violencia cotidiana y los pequeños gestos de ternura que persisten a pesar de todo.",
     "mainImage": "img/proyectos/guido_0578.jpg",
     "alt": "ZINE INFIERNOS — Guido Castellotti",
     "videos": [],
@@ -4910,7 +4910,7 @@ const PROJECTS_DATA = [
     ],
     "date": "2026",
     "title": "ZINE BALLET PARA LAS MASAS",
-    "description": "Una publicaci├│n en colaboraci├│n con los m├║sicos Fasciolo y Nasir Catriel asociada al disco hom├│nimo: una obra que recorre ├¡dolos populares, tragedias heredadas, luchas y glorias colectivas desde una mirada cr├¡tica y profundamente argentina.",
+    "description": "Una publicación en colaboración con los músicos Fasciolo y Nasir Catriel asociada al disco homónimo: una obra que recorre ídolos populares, tragedias heredadas, luchas y glorias colectivas desde una mirada crítica y profundamente argentina.",
     "mainImage": "img/proyectos/guido_0586.jpg",
     "alt": "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
     "videos": [],
@@ -5048,6 +5048,49 @@ function renderProjectDetail() {
       currentProject.videos.forEach(vUrl => {
         const wrap = document.createElement('div');
         wrap.className = 'project-video-wrapper';
+
+        // Dimensiones exactas para videos de Adobe CCV
+        const VIDEO_METADATA = {
+          "6cp3HyEHdEg": { width: 1080, height: 1920, isVertical: true },
+          "4Jc6ZfQjh4q": { width: 1920, height: 1080, isVertical: false },
+          "JRtQ9krSbZv": { width: 720, height: 1114, isVertical: true },
+          "F3BLd3gBYuY": { width: 1080, height: 1920, isVertical: true },
+          "LjpeqoHWFEy": { width: 1080, height: 1920, isVertical: true },
+          "CNkUdowkUKH": { width: 1080, height: 1920, isVertical: true },
+          "NUTmDvpDqdo": { width: 1920, height: 1080, isVertical: false },
+          "TGdSI_dCRcE": { width: 1080, height: 1920, isVertical: true },
+          "LyeMgIyDjDg": { width: 1920, height: 1080, isVertical: false },
+          "9An6wjeopn4": { width: 1080, height: 1920, isVertical: true },
+          "GJ_93ZhWG7e": { width: 1080, height: 1920, isVertical: true },
+          "MWv4H3MM6vB": { width: 1080, height: 1920, isVertical: true },
+          "Bu6DSQnwWBE": { width: 1080, height: 1920, isVertical: true },
+          "RY-QzeQ44gD": { width: 1080, height: 1920, isVertical: true },
+          "5E_JJkFG2pW": { width: 1080, height: 1920, isVertical: true },
+          "BybEdPwNZKY": { width: 1080, height: 1920, isVertical: true },
+          "PT56ACs7iPj": { width: 1080, height: 1920, isVertical: true },
+          "NGSgHb_oHpr": { width: 1080, height: 1920, isVertical: true },
+          "CDGGU8bNCqj": { width: 1920, height: 1080, isVertical: false },
+          "Uc-fjoTtSAE": { width: 1080, height: 1920, isVertical: true },
+          "5fL7w7D3cpP": { width: 1080, height: 1920, isVertical: true }
+        };
+
+        const match = vUrl.match(/\/ccv\/([^/?#]+)/);
+        let isVertical = false;
+        let aspectStyle = '16 / 9';
+
+        if (match && VIDEO_METADATA[match[1]]) {
+          const meta = VIDEO_METADATA[match[1]];
+          isVertical = meta.isVertical;
+          aspectStyle = `${meta.width} / ${meta.height}`;
+        }
+
+        if (isVertical) {
+          wrap.classList.add('is-vertical');
+        } else {
+          wrap.classList.add('is-horizontal');
+        }
+        wrap.style.aspectRatio = aspectStyle;
+
         if (vUrl.endsWith('.mp4') || vUrl.endsWith('.webm')) {
           wrap.innerHTML = `<video src="${vUrl}" controls playsinline preload="metadata" class="project-html5-video"></video>`;
         } else {
