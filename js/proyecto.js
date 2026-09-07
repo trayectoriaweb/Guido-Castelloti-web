@@ -7487,8 +7487,12 @@ function renderProjectDetail() {
   }
 
   // 5. Inicializar Lightbox modal con la galería exacta completa
-  if (currentProject.gallery && currentProject.gallery.length > 0) {
-    initLightbox(currentProject.gallery);
+  try {
+    if (currentProject.gallery && currentProject.gallery.length > 0) {
+      initLightbox(currentProject.gallery);
+    }
+  } catch (err) {
+    console.warn('Error al inicializar lightbox:', err);
   }
 
   // 6. Paginación anterior / siguiente
@@ -7504,17 +7508,31 @@ function renderProjectDetail() {
   const nextTitle = document.getElementById('nextProjectTitle');
 
   if (prevLink && prevProject) {
-    prevLink.href = 'proyecto.html?id=' + prevProject.slug;
+    const prevUrl = 'proyecto.html?id=' + prevProject.slug;
+    prevLink.href = prevUrl;
     if (prevTitle) prevTitle.textContent = prevProject.title;
+    prevLink.onclick = (e) => {
+      e.preventDefault();
+      window.location.href = prevUrl;
+    };
   }
 
   if (nextLink && nextProject) {
-    nextLink.href = 'proyecto.html?id=' + nextProject.slug;
+    const nextUrl = 'proyecto.html?id=' + nextProject.slug;
+    nextLink.href = nextUrl;
     if (nextTitle) nextTitle.textContent = nextProject.title;
+    nextLink.onclick = (e) => {
+      e.preventDefault();
+      window.location.href = nextUrl;
+    };
   }
 
   // 7. Renderizar sección "Otros proyectos" con afinidad temática inteligente
-  renderMoreProjects(currentProject);
+  try {
+    renderMoreProjects(currentProject);
+  } catch (err) {
+    console.warn('Error al renderizar otros proyectos:', err);
+  }
 }
 
 /* =========================================================================
@@ -7605,8 +7623,12 @@ function renderMoreProjects(currentProject) {
 }
 
 
+let activeGallery = [];
+let isLightboxInitialized = false;
+let currentLightboxIndex = 0;
+
 function initLightbox(gallery) {
-  activeGallery = gallery;
+  activeGallery = gallery || [];
   if (isLightboxInitialized) return;
   isLightboxInitialized = true;
 
