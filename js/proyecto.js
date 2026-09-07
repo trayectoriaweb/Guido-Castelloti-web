@@ -5087,7 +5087,7 @@ function renderProjectDetail() {
   if (currentProject.gallery && currentProject.gallery.length > 0) {
     if (gallerySection) gallerySection.style.display = '';
     if (countLabel) {
-      countLabel.textContent = currentProject.gallery.length + ' Imágenes de la serie (1:1)';
+      countLabel.textContent = currentProject.gallery.length + ' Imágenes de la serie';
     }
 
     if (gridEl) {
