@@ -1824,10 +1824,16 @@ body.mobile-menu-open .floating-talk-wrapper {
   transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s ease;
 }
 
-.gallery-lightbox.is-open {
+.gallery-lightbox.is-open,
+.gallery-lightbox.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.gallery-lightbox.is-open .lightbox-content-box,
+.gallery-lightbox.active .lightbox-content-box {
+  transform: scale(1);
 }
 
 .lightbox-backdrop {
