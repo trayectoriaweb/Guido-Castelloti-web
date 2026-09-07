@@ -319,13 +319,14 @@ function initImageTrail() {
   if (!canvas || !container) return;
 
   const images = [
-    'img/proyectos/guido_0215.jpg',
-    'img/proyectos/guido_0469.jpg',
-    'img/proyectos/guido_0495.jpg',
     'img/proyectos/guido_0160.jpg',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/fbf9dde5-3195-4819-a0e9-d10665fcfd34_rwc_176x0x1348x1054x1348.jpg?h=ee59d57a2cb647a46e9177a641a27e77',
-    'img/proyectos/guido_0576.jpg',
-    'img/proyectos/guido_0023.jpg'
+    'img/proyectos/guido_0074.jpg',
+    'img/proyectos/guido_0243.jpg',
+    'img/proyectos/guido_0001.jpg',
+    'img/proyectos/guido_0021.jpg',
+    'img/proyectos/guido_0030.jpg',
+    'img/proyectos/guido_0559.jpg',
+    'img/proyectos/guido_0215.jpg'
   ];
 
   let currentIndex = 0;
@@ -334,7 +335,7 @@ function initImageTrail() {
   const minDistance = 65; // Distancia mínima en píxeles de movimiento para spawnear
   let zCounter = 10;
 
-  const sizePalette = [150, 240, 175, 290, 140, 220, 260, 190];
+  const sizePalette = [220, 260, 200, 280, 210, 250, 240];
   let sizeIndex = 0;
 
   function spawnImage(x, y) {
@@ -343,14 +344,14 @@ function initImageTrail() {
     img.alt = 'Fotografía de archivo';
     img.className = 'trail-image-item';
 
-    // Tamaño variable único por imagen
+    // Ancho variable manteniendo proporción natural
     const isMobile = window.innerWidth <= 768;
-    const baseSize = sizePalette[sizeIndex % sizePalette.length];
-    const finalSize = isMobile ? Math.round(baseSize * 0.65) : baseSize;
+    const baseWidth = sizePalette[sizeIndex % sizePalette.length];
+    const finalWidth = isMobile ? Math.round(baseWidth * 0.65) : baseWidth;
     sizeIndex++;
 
-    img.style.width = `${finalSize}px`;
-    img.style.height = `${finalSize}px`;
+    img.style.width = `${finalWidth}px`;
+    img.style.height = 'auto';
 
     // Rotación sutil aleatoria (-6deg a 6deg) para sensación de collage editorial
     const randomRot = (Math.random() * 12 - 6).toFixed(1) + 'deg';

@@ -966,13 +966,15 @@ body.mobile-menu-open .floating-talk-wrapper {
 
 .trail-image-item {
   position: absolute;
-  width: clamp(140px, 16vw, 220px);
+  max-width: 320px;
+  max-height: 380px;
   height: auto;
-  object-fit: contain;
+  display: block;
   transform: translate(-50%, -50%) scale(0.9) rotate(var(--rot, 0deg));
   opacity: 0;
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
-  border: none;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   animation: trailPopIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   pointer-events: none;
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
