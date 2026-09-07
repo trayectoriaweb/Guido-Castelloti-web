@@ -99,6 +99,26 @@ button {
   justify-content: space-between;
 }
 
+.brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--red-editorial);
+  text-decoration: none;
+  transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 4px 0;
+}
+
+.brand-logo-link:hover {
+  color: #000000;
+  transform: scale(1.04);
+}
+
+.brand-logo-svg {
+  width: auto;
+  height: clamp(22px, 2.5vw, 26px);
+  display: block;
+}
+
 .brand-text-label {
   font-family: var(--font-headline);
   font-weight: 500;
