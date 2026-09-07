@@ -1964,3 +1964,41 @@ body.mobile-menu-open .floating-talk-wrapper {
     width: min(92vw, 86vmin);
   }
 }
+
+/* ==========================================================================
+   Sección de Video para Proyectos Audiovisuales
+   ========================================================================== */
+.project-video-section {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto 60px auto;
+  padding: 0 var(--sp-edge);
+}
+
+.project-video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-video-wrapper iframe,
+.project-video-wrapper video,
+.project-video-wrapper .project-html5-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
