@@ -1,7 +1,6 @@
 /* ==========================================================================
-   JULIÁN COSTA — PORTFOLIO EDITORIAL
+   GUIDO CASTELLOTTI — PORTFOLIO EDITORIAL
    Tipografía DM SANS + INSTRUMENT SANS
-   Carrusel Deslizable Interactivo + Telón Rojo con Efecto Revelado Animado (Curtain Reveal)
    ========================================================================== */
 
 /* --- 1. Variables de Diseño --- */
@@ -9,7 +8,7 @@
   --bg-main: #ffffff;
   --bg-subtle: #fafafa;
   --bg-blue-studio: #0b3d7d;
-  --red-editorial: #301135; /* Ciruela profundo / Midnight Plum (#301135) */
+  --red-editorial: #e51d1d; /* Rojo editorial vibrante (#e51d1d) */
   
   --text-dark: #000000;
   --text-body: #333336;
