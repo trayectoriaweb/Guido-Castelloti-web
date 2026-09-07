@@ -1,34 +1,19 @@
-# Julián Costa — Portfolio Editorial (Plantilla 01)
+# Guido Castellotti — Web & Portfolio Editorial
 
-Plantilla web profesional de estilo editorial inspirada en **Lovers Magazine** y revistas de diseño contemporáneas. Diseñada para creativos, fotógrafos, directores de arte y diseñadores.
-
----
-
-## 📸 Características Principales
-
-- **Hero Split-Screen de Gran Impacto:** Tipografía masiva de autor (*Syne* + *Plus Jakarta Sans*) y fotografía de retrato vertical a sangre.
-- **Showcase de Trabajos con Tipografía Superpuesta (Overlay):** Tarjetas fotográficas de alta resolución con texto en contraste, badges de categoría y transiciones suaves de zoom.
-- **Visor Modal Interactivo:** Al hacer clic en cualquier proyecto se abre un detalle completo con galería fotográfica adicional, ficha técnica (cliente, año, rol) y botón directo de consulta.
-- **Sección Sobre Mí & Especialidades:** Lista interactiva y estilizada de áreas de trabajo (Retratos, Moda, Editorial, Campañas, Eventos).
-- **Tarjetas de Servicios:** Tabla visual con entregables clave y enlaces de consulta por WhatsApp.
-- **Llamado a la Acción (CTA WhatsApp):** Botón directo configurado con mensaje personalizado de contacto.
-- **Reloj en Vivo:** Indicador en tiempo real de hora local en Rosario (GMT-3).
-- **100% Responsive & Accesible:** Optimizado para pantallas móviles, tablets y monitores 4K.
-- **Sin dependencias pesadas:** HTML5 + CSS3 moderno + JavaScript Vanilla puro. Abre directamente en el navegador con doble clic.
+Sitio web y portfolio oficial de **Guido Castellotti**, realizador audiovisual y diseñador gráfico (Rosario, Argentina).
 
 ---
 
-## 📁 Estructura del Proyecto
+## 🎬 Características Principales
 
-```text
-01-portfolio-editorial/
-├── index.html        # Estructura principal y contenido
-├── css/
-│   └── style.css     # Estilos, sistema de diseño, variables y responsive
-├── js/
-│   └── main.js       # Interacciones (modal de proyectos, menú, reloj, scroll)
-└── README.md         # Documentación de la plantilla
-```
+- **27 Proyectos Reales & Sistema Multidisciplinario:** Cobertura de Proyectos Integrales, Fotografía & Video, Diseño Gráfico y Obra Impresa.
+- **Hero Panorámico con Nombre Centrado Permanente:** Secuencia fluida de fotogramas y obras visuales en alta definición.
+- **Filtros Dinámicos por Categoría:** *Todos*, *Proyectos Integrales*, *Fotografía & Video*, *Diseño* y *Obra Impresa*.
+- **Tarjetas Cuadradas 1:1:** Encuadre editorial sin recortes accidentales de cabezas ni pérdida de composición.
+- **Páginas de Detalle (`proyecto.html`) con Reproductor de Video:** Integración fluida para video (Vimeo, YouTube y MP4) y galería fotográfica en alta resolución con lightbox interactivo.
+- **Sección Sobre Mí & Servicios:** Manifiesto, retrato, trayectoria y desglose de servicios profesionales.
+- **Imágenes 100% Locales:** 592 fotografías y piezas visuales alojadas localmente en el repositorio sin dependencias externas.
+- **Contacto Directo:** Botón flotante "Hablemos", WhatsApp y enlaces a Instagram.
 
 ---
 

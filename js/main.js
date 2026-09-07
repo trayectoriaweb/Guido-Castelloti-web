@@ -319,13 +319,13 @@ function initImageTrail() {
   if (!canvas || !container) return;
 
   const images = [
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/c4a35125-85c3-43d8-9555-b18712b4443b_rwc_270x0x1381x1080x1381.jpg?h=ab148eb01ca1e65c8916adeaa938062c',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/ee8bf1c0-406d-4708-a7ec-0e6ee4a5c8fc_rwc_83x0x3683x2880x3683.jpg?h=4cda7bba0453b06be8e656db339ba896',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/25346034-c890-4f18-90f3-b9308fef3092_rwc_1003x615x1354x1058x1354.jpg?h=7bba9701596ec6396454f77b4398ac32',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/8a00c74b-41f7-4b08-9eb3-b9379e4a203e_rwc_0x430x1200x938x1200.jpg?h=8b1ad8bc40f3625b42e467c53325f0bf',
+    'img/proyectos/guido_0215.jpg',
+    'img/proyectos/guido_0469.jpg',
+    'img/proyectos/guido_0495.jpg',
+    'img/proyectos/guido_0160.jpg',
     'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/fbf9dde5-3195-4819-a0e9-d10665fcfd34_rwc_176x0x1348x1054x1348.jpg?h=ee59d57a2cb647a46e9177a641a27e77',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/7fccbe50-d25d-4a1c-8921-34c9a3fa2b04_rwc_273x437x883x690x883.jpg?h=88dde79a49fa55c020ada357ed5cae1e',
-    'https://cdn.myportfolio.com/4267d3ad-5886-43bf-9f82-e73bc9998098/06914817-9ea3-4a44-ad8d-1a4c64246d2b_rwc_270x0x1381x1080x1381.jpg?h=17027a8ce20b66839c3fb39289f1cb87'
+    'img/proyectos/guido_0576.jpg',
+    'img/proyectos/guido_0023.jpg'
   ];
 
   let currentIndex = 0;
