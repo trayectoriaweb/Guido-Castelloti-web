@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2026.guido.11" />
+  <link rel="stylesheet" href="css/style.css?v=2026.guido.12" />
 </head>
 <body class="editorial-portfolio-body project-detail-body">
 
@@ -58,61 +58,46 @@
   </header>
 
   <main>
-    <!-- ==================== ENCABEZADO DE PROYECTO ==================== -->
-    <section class="project-hero-header">
-      <div class="project-hero-inner">
-        
-        <div class="project-top-nav-bar">
-          <a href="index.html#trabajos" class="project-back-link">
-            <span>← Volver a Trabajos</span>
-          </a>
-          <span class="project-meta-pill" id="projectCategoryDate">Proyectos Integrales · 2025</span>
-        </div>
-
-        <div class="project-title-block">
-          <h1 class="project-main-title" id="projectTitle">Proyecto</h1>
-          <p class="project-lead-desc" id="projectDescription">
-            Descripción del proyecto...
-          </p>
-        </div>
-
+    <!-- ==================== BARRA DE NAVEGACIÓN SUPERIOR ==================== -->
+    <div class="project-top-nav-bar-wrapper">
+      <div class="project-top-nav-bar">
+        <a href="index.html#trabajos" class="project-back-link">
+          <span>← Volver a Trabajos</span>
+        </a>
+        <span class="project-meta-pill" id="projectCategoryDate">Proyectos Integrales · 2025</span>
       </div>
-    </section>
+    </div>
 
-    <!-- ==================== FOTO PRINCIPAL EN ALTA RESOLUCIÓN ==================== -->
-    <section class="project-featured-media-section">
-      <div class="project-featured-container">
-        <div class="featured-img-frame">
-          <img 
-            id="projectFeaturedImg" 
-            src="" 
-            alt="Fotografía principal del proyecto" 
-            class="project-featured-img"
-          />
+    <!-- ==================== HERO BANNER 1920x1080 (TÍTULO EN BLANCO SOBRE IMAGEN) ==================== -->
+    <section class="project-hero-widescreen-section">
+      <div class="project-hero-widescreen-frame" id="projectHeroFrame">
+        <img 
+          id="projectHeroImg" 
+          src="" 
+          alt="Portada del proyecto" 
+          class="project-hero-widescreen-img"
+        />
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-title-container">
+          <span class="project-hero-kicker" id="projectHeroKicker">Obra</span>
+          <h1 class="project-hero-title" id="projectTitle">Título del Proyecto</h1>
         </div>
       </div>
     </section>
 
-    <!-- ==================== REPRODUCTOR DE VIDEO (SI CONTIENE AUDIOVISUAL) ==================== -->
-    <section class="project-video-section" id="projectVideoSection" style="display: none;">
-      <div class="project-video-container" id="projectVideoContainer">
-        <!-- Inyectado dinámicamente si el proyecto tiene video -->
+    <!-- ==================== TEXTO DEL PROYECTO (SI TIENE) ==================== -->
+    <section class="project-curatorial-section" id="projectCuratorialSection">
+      <div class="project-curatorial-inner">
+        <p class="project-curatorial-text" id="projectDescription">
+          <!-- Inyectado dinámicamente si el proyecto tiene descripción en su solapa -->
+        </p>
       </div>
     </section>
 
-    <!-- ==================== GRILLA EDITORIAL DE TODAS LAS FOTOS ==================== -->
-    <section class="project-archive-gallery-section">
-      <div class="project-gallery-inner">
-        
-        <div class="gallery-header-row">
-          <span class="gallery-section-kicker">Archivo visual · Galería completa</span>
-          <span class="gallery-count-tag" id="galleryCountLabel">0 Imágenes</span>
-        </div>
-
-        <div class="project-mosaic-grid" id="projectMosaicGrid">
-          <!-- Inyectado dinámicamente con las imágenes de la serie -->
-        </div>
-
+    <!-- ==================== ÁLBUM MODULAR (ESTRUCTURA ORIGINAL ADOBE PORTFOLIO) ==================== -->
+    <section class="project-album-section" id="projectAlbumSection">
+      <div class="project-album-container" id="projectAlbumContainer">
+        <!-- Inyectado dinámicamente: colecciones de imágenes, subtítulos y videos -->
       </div>
     </section>
 
@@ -249,7 +234,7 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=2026.guido.11"></script>
-  <script src="js/proyecto.js?v=2026.guido.11"></script>
+  <script src="js/main.js?v=2026.guido.12"></script>
+  <script src="js/proyecto.js?v=2026.guido.12"></script>
 </body>
 </html>

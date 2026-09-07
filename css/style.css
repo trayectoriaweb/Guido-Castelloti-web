@@ -1525,6 +1525,20 @@ body.mobile-menu-open .floating-talk-wrapper {
   transform: translateX(-4px);
 }
 
+.project-top-nav-bar-wrapper {
+  width: 100%;
+  padding: clamp(24px, 3.5vw, 40px) var(--pad-side) 16px;
+  background-color: var(--bg-base);
+}
+
+.project-top-nav-bar {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .project-meta-pill {
   font-family: var(--font-body);
   font-size: 0.85rem;
@@ -1534,206 +1548,238 @@ body.mobile-menu-open .floating-talk-wrapper {
   color: var(--text-muted);
 }
 
-.project-title-block {
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-main-title {
-  font-family: var(--font-headline);
-  font-size: clamp(3.2rem, 8.5vw, 7.5rem);
-  font-weight: 400;
-  line-height: 0.94;
-  letter-spacing: -0.035em;
-  color: #000000;
-  text-wrap: balance;
-}
-
-.project-lead-desc {
-  font-family: var(--font-body);
-  font-size: clamp(1.08rem, 1.45vw, 1.3rem);
-  color: var(--text-dark);
-  line-height: 1.6;
-  max-width: 720px;
-}
-
-/* Foto Principal en Grande */
-.project-featured-media-section {
+/* ==========================================================================
+   Hero Widescreen 1920x1080 (Título en blanco sobre la imagen)
+   ========================================================================== */
+.project-hero-widescreen-section {
   width: 100%;
-  padding: 0 var(--pad-side) clamp(60px, 8vw, 110px);
-  background-color: #ffffff;
+  padding: 0 var(--pad-side) 24px;
+  background-color: var(--bg-base);
 }
 
-.project-featured-container {
-  max-width: 1360px;
-  margin: 0 auto;
-}
-
-.featured-img-frame {
-  width: 100%;
-  max-width: 1200px;
-  max-height: 85vh;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: var(--bg-subtle);
-  border: 1px solid var(--border-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-featured-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 85vh;
-  object-fit: contain;
-  object-position: center;
-  filter: contrast(1.03) brightness(0.99);
-  display: block;
-}
-
-/* Grilla Editorial de Todas las Fotos del Archivo */
-.project-archive-gallery-section {
-  width: 100%;
-  padding: clamp(70px, 9vw, 120px) var(--pad-side);
-  background-color: #f7f7f7;
-  border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
-}
-
-.project-gallery-inner {
-  max-width: 1360px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-
-.gallery-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.gallery-section-kicker {
-  font-family: var(--font-headline);
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: #000000;
-}
-
-.gallery-count-tag {
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: var(--text-muted);
-}
-
-/* Mosaico Editorial en Columnas Naturales (Masonry) — Proporción Original */
-.project-mosaic-grid {
-  columns: 3 320px;
-  column-gap: clamp(16px, 2.5vw, 32px);
-}
-
-.gallery-mosaic-card {
+.project-hero-widescreen-frame {
   position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: 1px solid var(--border-light);
-  transition: transform var(--t-fast), box-shadow var(--t-fast);
-  break-inside: avoid;
-  margin-bottom: clamp(16px, 2.5vw, 32px);
-  display: block;
-}
-
-.gallery-mosaic-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
-}
-
-.mosaic-img-box {
   width: 100%;
-  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  max-height: 82vh;
+  min-height: 380px;
   overflow: hidden;
-  background-color: var(--bg-subtle);
-  display: block;
+  border-radius: 6px;
+  background-color: #0a0a0a;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
+  cursor: zoom-in;
 }
 
-.mosaic-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.gallery-mosaic-card:hover .mosaic-img {
-  transform: scale(1.03);
-}
-
-.mosaic-zoom-pill {
+.project-hero-widescreen-img {
   position: absolute;
-  top: 14px;
-  right: 14px;
-  background-color: rgba(255, 255, 255, 0.92);
-  color: #000000;
-  padding: 6px 12px;
-  font-family: var(--font-body);
-  font-size: 0.76rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity var(--t-fast), transform var(--t-fast);
-  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-hero-widescreen-frame:hover .project-hero-widescreen-img {
+  transform: scale(1.02);
+}
+
+.project-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.35) 45%, rgba(0, 0, 0, 0.8) 100%);
   pointer-events: none;
 }
 
-.gallery-mosaic-card:hover .mosaic-zoom-pill {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.mosaic-overlay {
+.project-hero-title-container {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 45%, rgba(0, 0, 0, 0.75) 100%);
-  padding: 22px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: clamp(24px, 4.5vw, 64px);
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  align-items: flex-start;
+  gap: 12px;
+  pointer-events: none;
 }
 
-.gallery-mosaic-card:hover .mosaic-overlay {
-  opacity: 1;
-}
-
-.mosaic-tag {
+.project-hero-kicker {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.82);
+  color: #ffffff;
+  background-color: var(--red-editorial);
+  padding: 5px 12px;
+  border-radius: 2px;
+  font-weight: 600;
 }
 
-.mosaic-title {
+.project-hero-title {
+  color: #ffffff !important;
   font-family: var(--font-headline);
-  font-size: 1.12rem;
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
   font-weight: 500;
-  color: #ffffff;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.65);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Texto Curatorial del Proyecto (Extraído de cada Solapa)
+   ========================================================================== */
+.project-curatorial-section {
+  width: 100%;
+  padding: clamp(28px, 4vw, 48px) var(--pad-side) clamp(36px, 5vw, 56px);
+  background-color: var(--bg-base);
+}
+
+.project-curatorial-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  border-left: 3px solid var(--red-editorial);
+  padding-left: clamp(20px, 3vw, 36px);
+}
+
+.project-curatorial-text {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.75;
+  color: var(--text-dark);
+  margin: 0;
+  white-space: normal;
+}
+
+/* ==========================================================================
+   Álbum Modular (Estructura idéntica a Adobe Portfolio)
+   ========================================================================== */
+.project-album-section {
+  width: 100%;
+  padding: 16px var(--pad-side) clamp(60px, 8vw, 110px);
+  background-color: var(--bg-base);
+}
+
+.project-album-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 56px);
+}
+
+/* Subtítulos de sección del álbum */
+.project-module-subtitle {
+  margin: 32px auto 8px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.project-module-subtitle h3 {
+  font-family: var(--font-headline);
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.project-module-subtitle h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 2px;
+  background-color: var(--red-editorial);
+}
+
+/* Grillas de Medios (1, 2, 3, 4, 5 Columnas) */
+.project-album-row {
+  display: grid;
+  gap: clamp(14px, 2vw, 24px);
+  width: 100%;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.project-album-row.cols-1 {
+  grid-template-columns: 1fr;
+}
+
+.project-album-row.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-album-row.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-album-row.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-album-row.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .project-album-row.cols-4,
+  .project-album-row.cols-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-album-row.cols-3,
+  .project-album-row.cols-4,
+  .project-album-row.cols-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .project-album-row.cols-2,
+  .project-album-row.cols-3,
+  .project-album-row.cols-4,
+  .project-album-row.cols-5 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.album-item-frame {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  cursor: zoom-in;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  display: block;
+  border-radius: 4px;
+}
+
+.album-item-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+}
+
+.album-item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  filter: contrast(1.02) brightness(0.99);
 }
 
 /* Navegación entre Proyectos (Paginación) */
