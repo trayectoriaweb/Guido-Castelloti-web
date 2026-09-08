@@ -704,27 +704,57 @@ body.mobile-menu-open .floating-talk-wrapper {
   border-bottom: 2px solid var(--red-editorial);
 }
 
-.drag-hint-label {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: var(--text-light);
+.carousel-nav-controls {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 
-/* Viewport Deslizable con Mouse y Touch */
+.carousel-nav-arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-medium);
+  background-color: var(--bg-main, #ffffff);
+  color: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  user-select: none;
+}
+
+.carousel-nav-arrow:hover:not(:disabled) {
+  border-color: var(--red-editorial);
+  color: var(--red-editorial);
+  transform: translateY(-1px);
+}
+
+.carousel-nav-arrow:active:not(:disabled) {
+  transform: translateY(0) scale(0.94);
+}
+
+.carousel-nav-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+  border-color: var(--border-light);
+  color: var(--text-light);
+}
+
+/* Viewport Deslizable con Rueda de Mouse, Flechas y Touch */
 .carousel-viewport {
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 10px var(--pad-side) 30px;
-  cursor: grab;
-  user-select: none;
-  -webkit-user-select: none;
+  cursor: default;
   scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 .carousel-viewport::-webkit-scrollbar {

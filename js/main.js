@@ -109,56 +109,110 @@ function initPanoramaSlider() {
 
 
 /* =========================================================================
-   2. Carrusel Deslizable Horizontal (Drag to Scroll con Mouse & Touch)
+   2. Carrusel Deslizable Horizontal (Rueda de Mouse, Flechas Nav y Touch)
    ========================================================================= */
 function initDraggableCarousel() {
   const viewport = document.getElementById('worksCarouselViewport');
   const track = document.getElementById('worksCarouselTrack');
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.works-carousel-section .filter-btn');
   const cards = document.querySelectorAll('.carousel-card');
+  const prevBtn = document.getElementById('carouselPrevBtn');
+  const nextBtn = document.getElementById('carouselNextBtn');
 
   if (!viewport || !track) return;
 
+  // 1. Desplazamiento orgánico con la rueda del mouse (Wheel)
+  viewport.addEventListener('wheel', (e) => {
+    // Si el usuario gira verticalmente la rueda
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      const isAtStart = viewport.scrollLeft <= 2;
+      const isAtEnd = Math.ceil(viewport.scrollLeft) >= maxScroll - 2;
+
+      // Si no estamos en el extremo del carrusel, deslizar horizontalmente
+      if ((e.deltaY > 0 && !isAtEnd) || (e.deltaY < 0 && !isAtStart)) {
+        e.preventDefault();
+        viewport.scrollLeft += e.deltaY * 1.5;
+        updateArrowStates();
+      }
+      // Si llega al final o al inicio, no previene el default y el usuario continúa scrolleando verticalmente la página
+    }
+  }, { passive: false });
+
+  // 2. Control de flechas editoriales ← y →
+  function getScrollStep() {
+    const visibleCard = Array.from(cards).find(c => !c.classList.contains('is-hidden'));
+    const cardWidth = visibleCard ? visibleCard.offsetWidth : 330;
+    return cardWidth + 32; // card + gap
+  }
+
+  function updateArrowStates() {
+    if (!prevBtn || !nextBtn) return;
+    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    prevBtn.disabled = viewport.scrollLeft <= 5;
+    nextBtn.disabled = Math.ceil(viewport.scrollLeft) >= maxScroll - 5;
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: -getScrollStep() * 1.5, behavior: 'smooth' });
+      setTimeout(updateArrowStates, 350);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: getScrollStep() * 1.5, behavior: 'smooth' });
+      setTimeout(updateArrowStates, 350);
+    });
+  }
+
+  viewport.addEventListener('scroll', () => {
+    updateArrowStates();
+  }, { passive: true });
+
+  // 3. Arrastre opcional suave (sin bloquear la interacción natural)
   let isDown = false;
-  let startX;
-  let scrollLeft;
-  let isDragging = false;
+  let startX = 0;
+  let scrollLeft = 0;
+  let hasDragged = false;
 
   viewport.addEventListener('mousedown', (e) => {
     isDown = true;
-    isDragging = false;
-    viewport.classList.add('is-dragging');
+    hasDragged = false;
     startX = e.pageX - viewport.offsetLeft;
     scrollLeft = viewport.scrollLeft;
   });
 
-  viewport.addEventListener('mouseleave', () => {
-    isDown = false;
-    viewport.classList.remove('is-dragging');
-  });
-
-  viewport.addEventListener('mouseup', () => {
-    isDown = false;
-    viewport.classList.remove('is-dragging');
+  window.addEventListener('mouseup', () => {
+    if (isDown) {
+      isDown = false;
+      viewport.classList.remove('is-dragging');
+    }
   });
 
   viewport.addEventListener('mousemove', (e) => {
     if (!isDown) return;
-    e.preventDefault();
-    isDragging = true;
     const x = e.pageX - viewport.offsetLeft;
-    const walk = (x - startX) * 1.8;
-    viewport.scrollLeft = scrollLeft - walk;
+    const walk = x - startX;
+    if (Math.abs(walk) > 6) {
+      hasDragged = true;
+      viewport.classList.add('is-dragging');
+      e.preventDefault();
+      viewport.scrollLeft = scrollLeft - (walk * 1.5);
+      updateArrowStates();
+    }
   });
 
   cards.forEach(card => {
     card.addEventListener('click', (e) => {
-      if (isDragging) {
+      if (hasDragged) {
         e.preventDefault();
       }
     });
   });
 
+  // 4. Filtros de categoría
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const filter = btn.getAttribute('data-filter');
@@ -176,8 +230,11 @@ function initDraggableCarousel() {
       });
 
       viewport.scrollTo({ left: 0, behavior: 'smooth' });
+      setTimeout(updateArrowStates, 350);
     });
   });
+
+  updateArrowStates();
 }
 
 /* =========================================================================
