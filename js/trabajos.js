@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initWorksArchive() {
   const gridContainer = document.getElementById('worksArchiveGrid');
-  const filterBtns = document.querySelectorAll('.works-filter-btn');
+  const filterBtns = document.querySelectorAll('.works-filter-bar .filter-btn');
   const counterLabel = document.getElementById('worksArchiveCounter');
 
   if (!gridContainer) return;
@@ -333,39 +333,33 @@ function initWorksArchive() {
 
     // Actualizar contador
     if (counterLabel) {
-      counterLabel.textContent = `Mostrando ${filtered.length} de ${CATALOG_PROJECTS.length} proyectos`;
+      counterLabel.textContent = `${filtered.length} proyectos`;
     }
   }
 
   function renderCards(projects) {
     gridContainer.innerHTML = '';
 
-    projects.forEach((proj, index) => {
+    projects.forEach((proj) => {
       const article = document.createElement('article');
-      article.className = 'works-archive-card';
-      article.style.animationDelay = `${(index % 9) * 0.04}s`;
+      article.className = 'works-grid-item';
+      article.setAttribute('data-category', proj.categoryKey);
 
       article.innerHTML = `
-        <a href="proyecto.html?id=${proj.slug}" class="works-archive-link" aria-label="${proj.title}">
-          <div class="works-archive-thumb-wrap">
+        <a href="proyecto.html?id=${proj.slug}" class="works-grid-link" aria-label="${proj.title}">
+          <span class="card-date">${proj.categoryLabel} · ${proj.date}</span>
+          <div class="card-media-box">
             <img 
               src="${proj.img}" 
               alt="${proj.alt}" 
-              class="works-archive-thumb-img" 
+              class="card-img" 
               loading="lazy" 
               draggable="false"
             />
-            <div class="works-archive-badge">${proj.categoryLabel}</div>
           </div>
-          <div class="works-archive-content">
-            <div class="works-archive-meta">
-              <span class="works-archive-date">${proj.date}</span>
-            </div>
-            <h3 class="works-archive-title">
-              <span>${proj.title}</span>
-              <span class="works-arrow-icon">↗</span>
-            </h3>
-            <p class="works-archive-desc">${proj.desc}</p>
+          <div class="card-body">
+            <h3 class="card-title">${proj.title} ↗</h3>
+            <p class="card-desc">${proj.desc}</p>
           </div>
         </a>
       `;

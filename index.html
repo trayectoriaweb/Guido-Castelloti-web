@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2026.guido.20" />
+  <link rel="stylesheet" href="css/style.css?v=2026.guido.21" />
 </head>
 <body class="editorial-portfolio-body">
 
@@ -148,16 +148,29 @@
     <!-- ==================== SELECCIÓN DE TRABAJOS (CARRUSEL DESLIZABLE) ==================== -->
     <section class="works-carousel-section" id="trabajos">
       
-      <!-- Barra de Filtros e Indicador de Arrastre -->
+      <!-- Encabezado Editorial y Filtros -->
       <div class="carousel-section-header">
-        <div class="filter-pills-row">
-          <button type="button" class="filter-btn active" data-filter="all">Todos (27)</button>
-          <button type="button" class="filter-btn" data-filter="integrales">Proyectos Integrales</button>
-          <button type="button" class="filter-btn" data-filter="fotovideo">Fotografía & Video</button>
-          <button type="button" class="filter-btn" data-filter="diseno">Diseño</button>
-          <button type="button" class="filter-btn" data-filter="impresa">Obra Impresa</button>
+        <div class="carousel-title-row">
+          <div class="carousel-title-group">
+            <span class="carousel-section-kicker">01 / Proyectos</span>
+            <h2 class="carousel-section-heading">Trabajos</h2>
+          </div>
+          <a href="trabajos.html" class="carousel-view-all-link">
+            <span>Ver archivo completo (27 proyectos)</span>
+            <span class="editorial-arrow">↗</span>
+          </a>
         </div>
-        <span class="drag-hint-label">Arrastrá para explorar ↔</span>
+
+        <div class="carousel-filters-bar">
+          <div class="filter-pills-row">
+            <button type="button" class="filter-btn active" data-filter="all">Todos (27)</button>
+            <button type="button" class="filter-btn" data-filter="integrales">Proyectos Integrales</button>
+            <button type="button" class="filter-btn" data-filter="fotovideo">Fotografía & Video</button>
+            <button type="button" class="filter-btn" data-filter="diseno">Diseño</button>
+            <button type="button" class="filter-btn" data-filter="impresa">Obra Impresa</button>
+          </div>
+          <span class="drag-hint-label">Arrastrá para explorar ↔</span>
+        </div>
       </div>
 
       <!-- Pista Deslizable Horizontal -->
@@ -680,11 +693,11 @@
         </div>
       </div>
 
-      <!-- Botón Monumental para Explorar Todos los Trabajos en trabajos.html -->
-      <div class="works-home-cta-row">
-        <a href="trabajos.html" class="btn-explore-all-works">
-          <span>Explorar el archivo completo (27 proyectos)</span>
-          <span class="cta-arrow">→</span>
+      <!-- Enlace Editorial al Archivo Completo -->
+      <div class="carousel-bottom-link-row">
+        <a href="trabajos.html" class="editorial-archive-link">
+          <span>Explorar todos los trabajos en el archivo completo (27)</span>
+          <span class="editorial-arrow">↗</span>
         </a>
       </div>
 
@@ -882,6 +895,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=2026.guido.20"></script>
+  <script src="js/main.js?v=2026.guido.21"></script>
 </body>
 </html>
