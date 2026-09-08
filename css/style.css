@@ -747,9 +747,10 @@ body.mobile-menu-open .floating-talk-wrapper {
 
 .card-desc {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.5;
+  text-transform: none !important;
 }
 
 /* ==========================================================================
@@ -2766,11 +2767,11 @@ body.mobile-menu-open .floating-talk-wrapper {
 
 .works-archive-desc {
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 1.45;
   color: #777777;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none !important;
   margin-top: auto;
   padding-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);

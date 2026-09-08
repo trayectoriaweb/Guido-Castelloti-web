@@ -12,7 +12,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0074.jpg",
     alt: "CALIOPE FAMILY — Guido Castellotti",
     title: "CALIOPE FAMILY",
-    desc: "FOTOGRAFÍA EN EXTERIOR · DISEÑO DE PIEZAS PARA REDES SOCIALES · BACKSTAGE CALIOPE FAMILY X KERCHAK"
+    desc: "Fotografía en exterior · Diseño de piezas para redes sociales · Backstage Caliope Family x Kerchak"
   },
   {
     categoryKey: "integrales",
@@ -22,7 +22,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0021.jpg",
     alt: "BASTILLA — Guido Castellotti",
     title: "BASTILLA",
-    desc: "DISEÑO DE PIEZAS PARA REDES SOCIALES · FOTOGRAFÍA EN ESTUDIO"
+    desc: "Diseño de piezas para redes sociales · Fotografía en estudio"
   },
   {
     categoryKey: "integrales",
@@ -32,7 +32,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0027.jpg",
     alt: "SUAVE LOMITO — Guido Castellotti",
     title: "SUAVE LOMITO",
-    desc: "DESARROLLO DE IDENTIDAD INTEGRAL"
+    desc: "Desarrollo de identidad integral"
   },
   {
     categoryKey: "integrales",
@@ -42,7 +42,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0025.jpg",
     alt: "KERCHAK — Guido Castellotti",
     title: "KERCHAK",
-    desc: "FOTOGRAFÍA EN EXTERIOR · DISEÑO DE PIEZAS PARA REDES SOCIALES · BACKSTAGE"
+    desc: "Fotografía en exterior · Diseño de piezas para redes sociales · Backstage"
   },
   {
     categoryKey: "integrales",
@@ -52,7 +52,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0023.jpg",
     alt: "GLADYSON PANTHER — Guido Castellotti",
     title: "GLADYSON PANTHER",
-    desc: "PRODUCCIÓN AUDIOVISUAL · FOTOGRAFÍA ANALÓGICA · IDENTIDAD VISUAL"
+    desc: "Producción audiovisual · Fotografía analógica · Identidad visual"
   },
   {
     categoryKey: "fotovideo",
@@ -62,7 +62,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0215.jpg",
     alt: "LIRA BIKES — Guido Castellotti",
     title: "LIRA BIKES",
-    desc: "PRODUCCIÓN AUDIOVISUAL · MONTAJE DINÁMICO · COLABORACIÓN AGUSTÍN MENÉNDEZ"
+    desc: "Producción audiovisual en colaboración con Agustín Menéndez · Montaje dinámico y cámara gimbal"
   },
   {
     categoryKey: "fotovideo",
@@ -72,7 +72,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0160.jpg",
     alt: "CMS ARQUITECTAS — Guido Castellotti",
     title: "CMS ARQUITECTAS",
-    desc: "FOTOGRAFÍA Y VIDEO DE ARQUITECTURA · SEGUIMIENTO DE OBRA · INFORMES DE AVANCE"
+    desc: "Fotografía y video de arquitectura · Seguimiento de obra e informes de avance"
   },
   {
     categoryKey: "fotovideo",
@@ -82,7 +82,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0165.jpg",
     alt: "DEGË MUEBLES — Guido Castellotti",
     title: "DEGË MUEBLES",
-    desc: "FOTOGRAFÍA DE MOBILIARIO Y DISEÑO DE INTERIORES"
+    desc: "Fotografía e-commerce · Contenido audiovisual para redes y catálogo"
   },
   {
     categoryKey: "fotovideo",
@@ -92,7 +92,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0168.jpg",
     alt: "KARMA NEGRO PELÍCULA — Guido Castellotti",
     title: "KARMA NEGRO PELÍCULA",
-    desc: "COBERTURA FOTOGRÁFICA Y AUDIOVISUAL ESTRENO CINE EL CAIRO"
+    desc: "Cobertura fotográfica y audiovisual del estreno en Cine El Cairo"
   },
   {
     categoryKey: "fotovideo",
@@ -102,7 +102,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0180.jpg",
     alt: "AU EXCLUSIVE — Guido Castellotti",
     title: "AU EXCLUSIVE",
-    desc: "FOTOGRAFÍA EDITORIAL PARA CAMPAÑA DE INDUMENTARIA"
+    desc: "Proyecto fotográfico para marca de indumentaria urbana inspirada en la cultura hip hop"
   },
   {
     categoryKey: "fotovideo",
@@ -112,7 +112,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0217.jpg",
     alt: "MIRENKA — Guido Castellotti",
     title: "MIRENKA",
-    desc: "FOTOGRAFÍA DE MODA Y LOOKBOOK"
+    desc: "Sesión fotográfica en estudio para accesorios de autor moldeados a mano"
   },
   {
     categoryKey: "fotovideo",
@@ -122,7 +122,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0172.jpg",
     alt: "ANTIPOP — Guido Castellotti",
     title: "ANTIPOP",
-    desc: "REGISTRO AUDIOVISUAL Y COBERTURA DE SHOWS EN VIVO"
+    desc: "Producción de fotografía y video en Chapadmalal para marca de indumentaria"
   },
   {
     categoryKey: "fotovideo",
@@ -132,7 +132,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0170.jpg",
     alt: "BRASIL┃ON TENTACIÓN TURISMO — Guido Castellotti",
     title: "BRASIL ┃ ON TENTACIÓN TURISMO",
-    desc: "PRODUCCIÓN AUDIOVISUAL Y FOTOGRAFÍA DE VIAJES"
+    desc: "Producción audiovisual y fotografía de viajes · Contenido para redes sociales"
   },
   {
     categoryKey: "fotovideo",
@@ -142,7 +142,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0174.jpg",
     alt: "SONDER — Guido Castellotti",
     title: "SONDER",
-    desc: "CAMPAÑA AUDIOVISUAL Y FOTOGRAFÍA PARA MARCA DEPORTIVA"
+    desc: "Campaña audiovisual y fotografía de estudio para marca deportiva"
   },
   {
     categoryKey: "fotovideo",
@@ -152,7 +152,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0176.jpg",
     alt: "URUGUAY┃PANES Y PECES RESTAURANTE — Guido Castellotti",
     title: "URUGUAY ┃ PANES Y PECES",
-    desc: "FOTOGRAFÍA GASTRONÓMICA Y AMBIENTAL"
+    desc: "Fotografía gastronómica y ambiental de restaurante"
   },
   {
     categoryKey: "fotovideo",
@@ -162,7 +162,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0182.jpg",
     alt: "FAPYD (UNR) — Guido Castellotti",
     title: "FAPYD (UNR)",
-    desc: "REGISTRO FOTOGRÁFICO INSTITUCIONAL Y ARQUITECTÓNICO"
+    desc: "Registro fotográfico institucional y arquitectónico · Facultad de Arquitectura"
   },
   {
     categoryKey: "fotovideo",
@@ -172,7 +172,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0178.jpg",
     alt: "LILA GRACE — Guido Castellotti",
     title: "LILA GRACE",
-    desc: "FOTOGRAFÍA DE RETRATO Y CAMPAÑA EDITORIAL"
+    desc: "Fotografía en exterior para el lanzamiento de la colección de verano"
   },
   {
     categoryKey: "diseno",
@@ -182,7 +182,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0495.jpg",
     alt: "NASIR CATRIEL Y FASCIOLO  BALLET PARA LAS MASAS — Guido Castellotti",
     title: "BALLET PARA LAS MASAS",
-    desc: "DESARROLLO DE IDENTIDAD · DIRECCIÓN TIPOGRÁFICA · AFICHES"
+    desc: "Desarrollo de identidad · Dirección tipográfica · Afiches y visualizers"
   },
   {
     categoryKey: "diseno",
@@ -192,7 +192,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0469.jpg",
     alt: "ROSARIO ES UN ECLIPSE — Guido Castellotti",
     title: "ROSARIO ES UN ECLIPSE",
-    desc: "SISTEMA EDITORIAL COMPLETO · TAPAS · INTERIORES Y COLOFÓN"
+    desc: "Desarrollo de sistema editorial completo · Tapas, contratapa, interiores y colofón"
   },
   {
     categoryKey: "diseno",
@@ -202,7 +202,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0473.jpg",
     alt: "DISEÑO EDITORIAL — Guido Castellotti",
     title: "DISEÑO EDITORIAL DE REVISTA",
-    desc: "DIRECCIÓN DE ARTE · MAQUETACIÓN EDITORIAL Y TIPOGRAFÍA"
+    desc: "Dirección de arte · Maquetación editorial y diseño tipográfico"
   },
   {
     categoryKey: "diseno",
@@ -212,7 +212,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0471.jpg",
     alt: "GYOR — Guido Castellotti",
     title: "GYOR",
-    desc: "IDENTIDAD VISUAL Y APLICACIONES GRÁFICAS"
+    desc: "Diseño de catálogo · Jerarquización de información e identidad visual"
   },
   {
     categoryKey: "diseno",
@@ -222,7 +222,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0467.jpg",
     alt: "KERCHAK — Guido Castellotti",
     title: "KID KERCHAK",
-    desc: "DISEÑO GRÁFICO · FLYERS Y MATERIAL DE DIFUSIÓN"
+    desc: "Diseño de tapa para single y piezas gráficas para redes sociales"
   },
   {
     categoryKey: "diseno",
@@ -232,7 +232,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0475.jpg",
     alt: "FESTIVAL NO PARO NI A PALO' — Guido Castellotti",
     title: "FESTIVAL NO PARO NI A PALO",
-    desc: "SISTEMA DE IDENTIDAD DE FESTIVAL · PIEZAS DIGITALES E IMPRESAS"
+    desc: "Proyecto de diseño para festival de trap · Piezas digitales e impresas"
   },
   {
     categoryKey: "impresa",
@@ -242,7 +242,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0576.jpg",
     alt: "FOTOGRAFÍA IMPRESA — Guido Castellotti",
     title: "FOTOGRAFÍA IMPRESA",
-    desc: "EXPERIMENTACIÓN EN RISOGRAFÍA · TINTAS PLANAS Y PAPEL OBRA"
+    desc: "Risografías A3 en papel obra 120g a una y dos tintas"
   },
   {
     categoryKey: "impresa",
@@ -252,7 +252,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0568.jpg",
     alt: "PRINT ROSARIO ES UN ECLIPSE — Guido Castellotti",
     title: "PRINT ROSARIO ES UN ECLIPSE",
-    desc: "POSTERS SERIADOS Y PRINTS LIMITADOS EN RISOGRAFÍA"
+    desc: "Prints en formato A3 impresos en risografía y calcomanías de autor"
   },
   {
     categoryKey: "impresa",
@@ -262,7 +262,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0566.jpg",
     alt: "ZINE INFIERNOS — Guido Castellotti",
     title: "ZINE INFIERNOS",
-    desc: "PUBLICACIÓN INDEPENDIENTE · FOTOGRAFÍA ANALÓGICA Y ENCUADERNACIÓN"
+    desc: "Publicación independiente · Selección de fotografías y encuadernación artesanal"
   },
   {
     categoryKey: "impresa",
@@ -272,7 +272,7 @@ const CATALOG_PROJECTS = [
     img: "img/proyectos/guido_0570.jpg",
     alt: "ZINE BALLET PARA LAS MASAS — Guido Castellotti",
     title: "ZINE BALLET PARA LAS MASAS",
-    desc: "FANZINE FOTOGRÁFICO DE ARCHIVO Y EDICIÓN LIMITADA"
+    desc: "Publicación editorial en colaboración con Nasir Catriel y Fasciolo"
   }
 ];
 
