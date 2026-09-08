@@ -52,13 +52,17 @@ function initPanoramaSlider() {
     if (titleLabel) titleLabel.textContent = title;
     if (descLabel) descLabel.textContent = desc;
     if (counterLabel) counterLabel.textContent = `${num} / ${totalNum}`;
+
+    if (typeof window.onPanoramaSlideChange === 'function') {
+      window.onPanoramaSlideChange(currentIndex);
+    }
   }
 
   function startAutoplay() {
     stopAutoplay();
     intervalId = setInterval(() => {
       showSlide(currentIndex + 1);
-    }, 1000); // Salto instantáneo cada 1 segundo (1000ms)
+    }, 1500); // Ritmo cinematográfico cada 1.5 segundos
   }
 
   function stopAutoplay() {
@@ -110,7 +114,7 @@ function initPanoramaSlider() {
 
 
 /* =========================================================================
-   2. Logo en Contraforma con Revelado Interactivo (Canvas Knockout + Spotlight)
+   2. Logo Flotante con Mosaico Craquelado Interior (Sigue al Cursor)
    ========================================================================= */
 function initHeroContraforma() {
   const canvas = document.getElementById('heroContraformaCanvas');
@@ -120,27 +124,61 @@ function initHeroContraforma() {
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
 
-  // Path SVG original del monograma geométrico de Guido Castellotti (viewBox 825 x 385)
+  // Path SVG del monograma geométrico de Guido Castellotti (viewBox 825 x 385)
   const logoSvgPath = "M0,0h92v301h-92z M222,0h92v302h-92z M378,0h447v82h-447z M378,82h446v1h-446z M444,83h92v218h-92z M667,83h92v302h-92z M0,301h93v1h-93z M443,301h93v1h-93z M0,302h536v83h-536z";
   const logoPath2D = new Path2D(logoSvgPath);
   const LOGO_ORIG_W = 825;
   const LOGO_ORIG_H = 385;
 
-  let width = 0;
-  let height = 0;
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-  let spotlightRadius = 0;
-  let targetRadius = 0;
-  let tiltX = 0;
-  let tiltY = 0;
-  let targetTiltX = 0;
-  let targetTiltY = 0;
+  // 10 imágenes con texturas ricas seleccionadas de las obras de Guido
+  const TEXTURE_SOURCES = [
+    'img/proyectos/guido_0559.jpg', // 0: Risografía A3 Fotografía Impresa
+    'img/proyectos/guido_0485.jpg', // 1: Rosario es un Eclipse (Noise & Type)
+    'img/proyectos/guido_0566.jpg', // 2: Zine Infiernos (Grano analógico)
+    'img/proyectos/guido_0570.jpg', // 3: Zine Ballet Para Las Masas (Impresión editorial)
+    'img/proyectos/guido_0568.jpg', // 4: Print Rosario es un Eclipse (Trama serigráfica)
+    'img/proyectos/guido_0503.jpg', // 5: Diseño Editorial Revista (Cuadrícula tipográfica)
+    'img/proyectos/guido_0027.jpg', // 6: Bastilla (Textura textil e hilado)
+    'img/proyectos/guido_0215.jpg', // 7: Lira Bikes (Metal, cuadro de acero y soldaduras)
+    'img/proyectos/guido_0471.jpg', // 8: Gyor (Packaging y tipografía rítmica)
+    'img/proyectos/guido_0467.jpg'  // 9: Kid Kerchak (Geometrías y contraste gráfico)
+  ];
+
+  const textureImgs = TEXTURE_SOURCES.map(src => {
+    const img = new Image();
+    img.src = src;
+    return img;
+  });
+
+  // Facetas craqueladas poligonales que cubren la silueta del logo
+  const shards = [
+    { pts: [[0, 0], [140, 0], [130, 160], [0, 150]], img: 0 },
+    { pts: [[0, 140], [130, 160], [140, 310], [0, 310]], img: 1 },
+    { pts: [[0, 300], [260, 300], [240, 385], [0, 385]], img: 2 },
+    { pts: [[230, 300], [550, 300], [550, 385], [230, 385]], img: 3 },
+    { pts: [[210, 0], [340, 0], [350, 160], [210, 150]], img: 4 },
+    { pts: [[210, 150], [350, 160], [340, 310], [210, 310]], img: 5 },
+    { pts: [[370, 0], [560, 0], [540, 90], [370, 90]], img: 6 },
+    { pts: [[540, 0], [700, 0], [680, 90], [530, 90]], img: 7 },
+    { pts: [[680, 0], [830, 0], [830, 90], [670, 90]], img: 8 },
+    { pts: [[430, 80], [550, 80], [550, 200], [430, 190]], img: 9 },
+    { pts: [[430, 190], [550, 200], [550, 310], [430, 310]], img: 0 },
+    { pts: [[650, 80], [780, 80], [780, 240], [650, 230]], img: 1 },
+    { pts: [[650, 230], [780, 240], [780, 385], [650, 385]], img: 2 }
+  ];
+
+  let width = 0, height = 0;
+  let targetX = 0, targetY = 0;
+  let currentX = 0, currentY = 0;
   let isHovering = false;
   let isVisible = true;
   let animId = null;
+  let textureShift = 0;
+
+  // Sincronizar rotación de texturas craqueladas con el carrusel de fondo
+  window.onPanoramaSlideChange = (slideIndex) => {
+    textureShift = slideIndex;
+  };
 
   function resize() {
     const rect = viewport.getBoundingClientRect();
@@ -164,14 +202,7 @@ function initHeroContraforma() {
     const rect = viewport.getBoundingClientRect();
     targetX = e.clientX - rect.left;
     targetY = e.clientY - rect.top;
-    targetRadius = Math.max(160, Math.min(width * 0.24, 290));
     isHovering = true;
-
-    // Sutil paralaje en la contraforma según distancia al centro
-    const normX = (targetX / width) - 0.5;
-    const normY = (targetY / height) - 0.5;
-    targetTiltX = normX * 20;
-    targetTiltY = normY * 12;
   }
 
   viewport.addEventListener('pointermove', onPointerMove, { passive: true });
@@ -179,76 +210,79 @@ function initHeroContraforma() {
 
   viewport.addEventListener('pointerleave', () => {
     isHovering = false;
-    targetRadius = 0;
-    targetTiltX = 0;
-    targetTiltY = 0;
+    targetX = width / 2;
+    targetY = height / 2;
   });
 
-  // Render loop a 60/120 fps con interpolación física suave (lerp)
+  // Render loop a 60/120 fps
   function render() {
     if (!isVisible) return;
 
+    // Movimiento orgánico magnético que sigue al cursor
     currentX += (targetX - currentX) * 0.12;
     currentY += (targetY - currentY) * 0.12;
-    spotlightRadius += (targetRadius - spotlightRadius) * 0.09;
-    tiltX += (targetTiltX - tiltX) * 0.08;
-    tiltY += (targetTiltY - tiltY) * 0.08;
 
+    // Limpieza completa del canvas (100% transparente afuera del logo)
     ctx.clearRect(0, 0, width, height);
 
-    // 1. Capa oscura velo cinematográfico (96% opacidad para contraste editorial y recorte puro)
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.fillStyle = 'rgba(8, 8, 8, 0.96)';
-    ctx.fillRect(0, 0, width, height);
-
-    // 2. Cálculo responsivo de proporciones del logo centrado
-    const maxLogoW = width > 768 
-      ? Math.min(width * 0.46, 600) 
-      : Math.min(width * 0.76, 360);
-    const scale = maxLogoW / LOGO_ORIG_W;
-    const logoW = LOGO_ORIG_W * scale;
+    // Escala del logo según resolución
+    const logoW = width > 768 
+      ? Math.min(Math.max(width * 0.28, 260), 420) 
+      : Math.min(Math.max(width * 0.65, 230), 320);
+    const scale = logoW / LOGO_ORIG_W;
     const logoH = LOGO_ORIG_H * scale;
-    const logoX = (width - logoW) / 2 + tiltX;
-    // Elevamos ligeramente el logo para dejar respiro al subtítulo
-    const logoY = (height - logoH) / 2 - (height > 600 ? 28 : 16) + tiltY;
 
-    // 3. CONTRAFORMA: Calar la capa oscura con la silueta del logo (destination-out)
-    ctx.globalCompositeOperation = 'destination-out';
+    // Centrado del logo en el cursor acotado al viewport
+    const rawX = currentX - logoW / 2;
+    const rawY = currentY - logoH / 2;
+    const padding = 10;
+    const logoX = Math.max(padding, Math.min(width - logoW - padding, rawX));
+    const logoY = Math.max(padding, Math.min(height - logoH - padding, rawY));
+
+    // Desfase de paralaje interior al mover el cursor
+    const panX = ((currentX / width) - 0.5) * 80;
+    const panY = ((currentY / height) - 0.5) * 50;
+
+    // 1. Recorte estricto al monograma del logo (Sin trazos, sin bordes, sin sombras)
     ctx.save();
     ctx.translate(logoX, logoY);
     ctx.scale(scale, scale);
-    ctx.fillStyle = '#000000';
-    ctx.fill(logoPath2D);
-    ctx.restore();
+    ctx.clip(logoPath2D);
 
-    // 4. REVELADO DINÁMICO: Apertura de foco en la posición del puntero
-    if (spotlightRadius > 1.5) {
-      const grad = ctx.createRadialGradient(currentX, currentY, 0, currentX, currentY, spotlightRadius);
-      grad.addColorStop(0, 'rgba(0, 0, 0, 1)');
-      grad.addColorStop(0.45, 'rgba(0, 0, 0, 0.8)');
-      grad.addColorStop(0.8, 'rgba(0, 0, 0, 0.28)');
-      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-
-      ctx.fillStyle = grad;
+    // 2. Dibujar las facetas del mosaico craquelado con las 10 texturas
+    shards.forEach((shard) => {
+      ctx.save();
       ctx.beginPath();
-      ctx.arc(currentX, currentY, spotlightRadius, 0, Math.PI * 2);
-      ctx.fill();
-    }
+      shard.pts.forEach((pt, pIdx) => {
+        if (pIdx === 0) ctx.moveTo(pt[0], pt[1]);
+        else ctx.lineTo(pt[0], pt[1]);
+      });
+      ctx.closePath();
+      ctx.clip();
 
-    // 5. FILETE EDITORIAL: Trazo vectorial nítido para enmarcar la geometría del logo
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.save();
-    ctx.translate(logoX, logoY);
-    ctx.scale(scale, scale);
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.38)';
-    ctx.lineWidth = 1.6 / scale;
-    ctx.stroke(logoPath2D);
+      const imgIdx = (shard.img + textureShift) % textureImgs.length;
+      const img = textureImgs[imgIdx];
+
+      if (img && img.complete && img.naturalWidth > 0) {
+        ctx.drawImage(
+          img,
+          -120 + panX, -80 + panY,
+          LOGO_ORIG_W + 240, LOGO_ORIG_H + 160
+        );
+      } else {
+        ctx.fillStyle = '#181818';
+        ctx.fill();
+      }
+
+      ctx.restore();
+    });
+
     ctx.restore();
 
     animId = requestAnimationFrame(render);
   }
 
-  // Optimización de rendimiento: pausar render cuando el Hero no esté visible en pantalla
+  // Pausar animación al hacer scroll para 0% de uso de CPU fuera del Hero
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
