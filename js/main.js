@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initPanoramaSlider();
+  initHeroContraforma();
   initDraggableCarousel();
   initFloatingTalkWidget();
   initScrollReveal();
@@ -109,7 +110,166 @@ function initPanoramaSlider() {
 
 
 /* =========================================================================
-   2. Carrusel Deslizable Horizontal (Rueda de Mouse, Flechas Nav y Touch)
+   2. Logo en Contraforma con Revelado Interactivo (Canvas Knockout + Spotlight)
+   ========================================================================= */
+function initHeroContraforma() {
+  const canvas = document.getElementById('heroContraformaCanvas');
+  const viewport = document.getElementById('panoramaViewport');
+  if (!canvas || !viewport) return;
+
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  // Path SVG original del monograma geométrico de Guido Castellotti (viewBox 825 x 385)
+  const logoSvgPath = "M0,0h92v301h-92z M222,0h92v302h-92z M378,0h447v82h-447z M378,82h446v1h-446z M444,83h92v218h-92z M667,83h92v302h-92z M0,301h93v1h-93z M443,301h93v1h-93z M0,302h536v83h-536z";
+  const logoPath2D = new Path2D(logoSvgPath);
+  const LOGO_ORIG_W = 825;
+  const LOGO_ORIG_H = 385;
+
+  let width = 0;
+  let height = 0;
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let spotlightRadius = 0;
+  let targetRadius = 0;
+  let tiltX = 0;
+  let tiltY = 0;
+  let targetTiltX = 0;
+  let targetTiltY = 0;
+  let isHovering = false;
+  let isVisible = true;
+  let animId = null;
+
+  function resize() {
+    const rect = viewport.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = rect.width;
+    height = rect.height;
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    if (!isHovering) {
+      currentX = targetX = width / 2;
+      currentY = targetY = height / 2;
+    }
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  function onPointerMove(e) {
+    const rect = viewport.getBoundingClientRect();
+    targetX = e.clientX - rect.left;
+    targetY = e.clientY - rect.top;
+    targetRadius = Math.max(160, Math.min(width * 0.24, 290));
+    isHovering = true;
+
+    // Sutil paralaje en la contraforma según distancia al centro
+    const normX = (targetX / width) - 0.5;
+    const normY = (targetY / height) - 0.5;
+    targetTiltX = normX * 20;
+    targetTiltY = normY * 12;
+  }
+
+  viewport.addEventListener('pointermove', onPointerMove, { passive: true });
+  viewport.addEventListener('pointerdown', onPointerMove, { passive: true });
+
+  viewport.addEventListener('pointerleave', () => {
+    isHovering = false;
+    targetRadius = 0;
+    targetTiltX = 0;
+    targetTiltY = 0;
+  });
+
+  // Render loop a 60/120 fps con interpolación física suave (lerp)
+  function render() {
+    if (!isVisible) return;
+
+    currentX += (targetX - currentX) * 0.12;
+    currentY += (targetY - currentY) * 0.12;
+    spotlightRadius += (targetRadius - spotlightRadius) * 0.09;
+    tiltX += (targetTiltX - tiltX) * 0.08;
+    tiltY += (targetTiltY - tiltY) * 0.08;
+
+    ctx.clearRect(0, 0, width, height);
+
+    // 1. Capa oscura velo cinematográfico (96% opacidad para contraste editorial y recorte puro)
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = 'rgba(8, 8, 8, 0.96)';
+    ctx.fillRect(0, 0, width, height);
+
+    // 2. Cálculo responsivo de proporciones del logo centrado
+    const maxLogoW = width > 768 
+      ? Math.min(width * 0.46, 600) 
+      : Math.min(width * 0.76, 360);
+    const scale = maxLogoW / LOGO_ORIG_W;
+    const logoW = LOGO_ORIG_W * scale;
+    const logoH = LOGO_ORIG_H * scale;
+    const logoX = (width - logoW) / 2 + tiltX;
+    // Elevamos ligeramente el logo para dejar respiro al subtítulo
+    const logoY = (height - logoH) / 2 - (height > 600 ? 28 : 16) + tiltY;
+
+    // 3. CONTRAFORMA: Calar la capa oscura con la silueta del logo (destination-out)
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.save();
+    ctx.translate(logoX, logoY);
+    ctx.scale(scale, scale);
+    ctx.fillStyle = '#000000';
+    ctx.fill(logoPath2D);
+    ctx.restore();
+
+    // 4. REVELADO DINÁMICO: Apertura de foco en la posición del puntero
+    if (spotlightRadius > 1.5) {
+      const grad = ctx.createRadialGradient(currentX, currentY, 0, currentX, currentY, spotlightRadius);
+      grad.addColorStop(0, 'rgba(0, 0, 0, 1)');
+      grad.addColorStop(0.45, 'rgba(0, 0, 0, 0.8)');
+      grad.addColorStop(0.8, 'rgba(0, 0, 0, 0.28)');
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(currentX, currentY, spotlightRadius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // 5. FILETE EDITORIAL: Trazo vectorial nítido para enmarcar la geometría del logo
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.save();
+    ctx.translate(logoX, logoY);
+    ctx.scale(scale, scale);
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.38)';
+    ctx.lineWidth = 1.6 / scale;
+    ctx.stroke(logoPath2D);
+    ctx.restore();
+
+    animId = requestAnimationFrame(render);
+  }
+
+  // Optimización de rendimiento: pausar render cuando el Hero no esté visible en pantalla
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        isVisible = entry.isIntersecting;
+        if (isVisible && !animId) {
+          animId = requestAnimationFrame(render);
+        } else if (!isVisible && animId) {
+          cancelAnimationFrame(animId);
+          animId = null;
+        }
+      });
+    }, { threshold: 0.05 });
+    observer.observe(viewport);
+  } else {
+    animId = requestAnimationFrame(render);
+  }
+}
+
+
+/* =========================================================================
+   3. Carrusel Deslizable Horizontal (Rueda de Mouse, Flechas Nav y Touch)
    ========================================================================= */
 function initDraggableCarousel() {
   const viewport = document.getElementById('worksCarouselViewport');

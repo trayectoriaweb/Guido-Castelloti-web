@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2026.guido.22" />
+  <link rel="stylesheet" href="css/style.css?v=2026.guido.23" />
 </head>
 <body class="editorial-portfolio-body">
 
@@ -122,10 +122,14 @@
         <!-- Capa de oscurecimiento suave para legibilidad cinematográfica -->
         <div class="panorama-overlay-tint" aria-hidden="true"></div>
 
-        <!-- NOMBRE MONUMENTAL CENTRADO PERMANENTE -->
-        <div class="hero-panorama-center-title">
-          <h1 class="hero-panorama-name">Guido Castellotti</h1>
+        <!-- Canvas de Logo en Contraforma con Revelado Interactivo -->
+        <canvas id="heroContraformaCanvas" class="hero-contraforma-canvas" aria-hidden="true"></canvas>
+
+        <!-- Subtítulo y pista interactiva debajo del logo -->
+        <div class="hero-contraforma-caption-box">
+          <h1 class="visually-hidden">Guido Castellotti — Realizador Audiovisual & Diseñador Gráfico</h1>
           <p class="hero-panorama-caption">Realizador Audiovisual & Diseñador Gráfico · Rosario, Argentina</p>
+          <span class="hero-explore-hint">Mové el cursor o deslizá para explorar</span>
         </div>
 
         <!-- Controles de navegación -->
@@ -898,6 +902,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=2026.guido.22"></script>
+  <script src="js/main.js?v=2026.guido.23"></script>
 </body>
 </html>
