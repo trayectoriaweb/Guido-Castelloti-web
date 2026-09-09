@@ -251,6 +251,21 @@ function initHeroContraforma() {
       ctx.globalAlpha = 1.0;
     }
 
+    // 4. Desgaste analógico de tinta (micro-raspaduras y motas de sello serigráfico)
+    ctx.save();
+    ctx.globalCompositeOperation = 'destination-out';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.28)';
+    const scratches = [
+      [45, 60, 24, 2], [140, 180, 18, 2], [230, 90, 32, 2.5],
+      [260, 220, 20, 2], [390, 40, 45, 2], [470, 140, 28, 2],
+      [510, 250, 22, 2], [680, 110, 35, 2.5], [740, 290, 30, 2]
+    ];
+    for (let i = 0; i < scratches.length; i++) {
+      const s = scratches[i];
+      ctx.fillRect(s[0], s[1], s[2], s[3]);
+    }
+    ctx.restore();
+
     ctx.restore();
 
     animId = requestAnimationFrame(render);

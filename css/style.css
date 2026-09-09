@@ -548,6 +548,7 @@ body.mobile-menu-open .floating-talk-wrapper {
   z-index: 10;
   pointer-events: none;
   mix-blend-mode: multiply;
+  filter: url(#hero-trash-distress);
 }
 
 .panorama-slider-track {
