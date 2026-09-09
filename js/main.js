@@ -63,7 +63,7 @@ function initPanoramaSlider() {
     stopAutoplay();
     intervalId = setInterval(() => {
       showSlide(currentIndex + 1);
-    }, 1500); // Ritmo cinematográfico cada 1.5 segundos
+    }, 3000); // Cambio cadencioso cada 3 segundos
   }
 
   function stopAutoplay() {
@@ -187,12 +187,12 @@ function initHeroContraforma() {
     mobileSlideIndex = (slideIndex + 2) % (mobileLogoImgs.length || 1);
   };
 
-  // Autoplay interno en mobile cada 2s para asegurar dinamismo continuo
+  // Autoplay interno en mobile cada 3s para sincronía y dinamismo continuo
   setInterval(() => {
     if (isMobile && isVisible) {
       mobileSlideIndex = (mobileSlideIndex + 1) % (mobileLogoImgs.length || 1);
     }
-  }, 2000);
+  }, 3000);
 
   // Giroscopio: respuesta fluida al tilt del teléfono en mobile
   let tiltTargetX = 0;
