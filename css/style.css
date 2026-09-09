@@ -598,6 +598,12 @@ body.mobile-menu-open .floating-talk-wrapper {
   mix-blend-mode: multiply;
 }
 
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+  .hero-contraforma-canvas {
+    mix-blend-mode: normal;
+  }
+}
+
 .panorama-slider-track {
   position: relative;
   width: 100%;

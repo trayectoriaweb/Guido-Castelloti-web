@@ -166,7 +166,83 @@ function initHeroContraforma() {
   let isVisible = true;
   let animId = null;
 
+  // Detección de dispositivos móviles / táctiles
+  let isMobile = false;
+  function updateMobileState() {
+    isMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches || 
+               (window.innerWidth <= 768 && ('ontouchstart' in window || navigator.maxTouchPoints > 0));
+  }
+
+  // Pre-carga de imágenes del carrusel para reproducir dentro del logo en mobile
+  const slideImgs = Array.from(viewport.querySelectorAll('.panorama-img'));
+  const mobileLogoImgs = slideImgs.map(img => {
+    const pre = new Image();
+    pre.src = img.getAttribute('src');
+    return pre;
+  });
+  let mobileSlideIndex = 0;
+
+  // Sincronización con el cambio de panorámica del hero
+  window.onPanoramaSlideChange = (slideIndex) => {
+    mobileSlideIndex = (slideIndex + 2) % (mobileLogoImgs.length || 1);
+  };
+
+  // Autoplay interno en mobile cada 2s para asegurar dinamismo continuo
+  setInterval(() => {
+    if (isMobile && isVisible) {
+      mobileSlideIndex = (mobileSlideIndex + 1) % (mobileLogoImgs.length || 1);
+    }
+  }, 2000);
+
+  // Giroscopio: respuesta fluida al tilt del teléfono en mobile
+  let tiltTargetX = 0;
+  let tiltTargetY = 0;
+
+  function onDeviceOrientation(e) {
+    if (!isMobile) return;
+    const gamma = (typeof e.gamma === 'number' && !isNaN(e.gamma)) ? e.gamma : 0;
+    const beta = (typeof e.beta === 'number' && !isNaN(e.beta)) ? e.beta : 48;
+
+    // Normalización: inclinación lateral (gamma) y vertical (beta, reposo neutro ~48°)
+    const normX = Math.max(-1, Math.min(1, gamma / 30));
+    const normY = Math.max(-1, Math.min(1, (beta - 48) / 25));
+
+    // Rango elástico contenido en torno al centro (±14% en ancho, ±10% en alto)
+    const maxOffsetW = width * 0.14;
+    const maxOffsetH = height * 0.10;
+    tiltTargetX = normX * maxOffsetW;
+    tiltTargetY = normY * maxOffsetH;
+
+    targetX = (width / 2) + tiltTargetX;
+    targetY = (height / 2) + tiltTargetY;
+  }
+
+  let orientationInitialized = false;
+  function initOrientation() {
+    if (orientationInitialized) return;
+    if (typeof window.DeviceOrientationEvent !== 'undefined') {
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        const reqIOS = () => {
+          DeviceOrientationEvent.requestPermission()
+            .then(state => {
+              if (state === 'granted') {
+                window.addEventListener('deviceorientation', onDeviceOrientation, { passive: true });
+                orientationInitialized = true;
+              }
+            })
+            .catch(() => {});
+        };
+        window.addEventListener('touchstart', reqIOS, { passive: true, once: true });
+      } else {
+        window.addEventListener('deviceorientation', onDeviceOrientation, { passive: true });
+        orientationInitialized = true;
+      }
+    }
+  }
+
   function resize() {
+    updateMobileState();
+    initOrientation();
     const rect = viewport.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     width = rect.width;
@@ -177,17 +253,25 @@ function initHeroContraforma() {
 
     noisePattern = createNoisePattern();
 
-    if (!isHovering) {
+    if (!isHovering && !isMobile) {
       currentX = targetX = width / 2;
       currentY = targetY = height / 2;
+    } else if (isMobile) {
+      targetX = (width / 2) + tiltTargetX;
+      targetY = (height / 2) + tiltTargetY;
+      if (currentX === 0 && currentY === 0) {
+        currentX = targetX;
+        currentY = targetY;
+      }
     }
   }
 
   window.addEventListener('resize', resize);
   resize();
 
-  // Seguimiento del cursor: permite que el logo viaje libremente hasta el borde superior absoluto del Hero
+  // Seguimiento del cursor: en desktop sigue libremente el puntero
   function onPointerMove(e) {
+    if (isMobile) return;
     const rect = viewport.getBoundingClientRect();
     if (e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= 0 && e.clientY <= rect.bottom) {
       targetX = e.clientX - rect.left;
@@ -204,6 +288,7 @@ function initHeroContraforma() {
   window.addEventListener('pointerdown', onPointerMove, { passive: true });
 
   viewport.addEventListener('pointerleave', () => {
+    if (isMobile) return;
     isHovering = false;
     targetX = width / 2;
     targetY = height / 2;
@@ -213,9 +298,10 @@ function initHeroContraforma() {
   function render() {
     if (!isVisible) return;
 
-    // Movimiento orgánico magnético que sigue al cursor
-    currentX += (targetX - currentX) * 0.12;
-    currentY += (targetY - currentY) * 0.12;
+    // Movimiento orgánico magnético: inercia suave (0.06 en mobile para flotar con el giroscopio, 0.12 en desktop)
+    const lerpSpeed = isMobile ? 0.06 : 0.12;
+    currentX += (targetX - currentX) * lerpSpeed;
+    currentY += (targetY - currentY) * lerpSpeed;
 
     // Limpieza completa del canvas
     ctx.clearRect(0, 0, width, height);
@@ -227,23 +313,64 @@ function initHeroContraforma() {
     const scale = logoW / LOGO_ORIG_W;
     const logoH = LOGO_ORIG_H * scale;
 
-    // Centrado del logo en el cursor acotado al viewport, permitiendo llegar al tope superior
+    // Centrado del logo en el cursor / giroscopio acotado al viewport
     const rawX = currentX - logoW / 2;
     const rawY = currentY - logoH / 2;
     const logoX = Math.max(0, Math.min(width - logoW, rawX));
     const logoY = Math.max(0, Math.min(height - logoH, rawY));
 
-    // 1. Recorte EXACTO y RECTO a la silueta vectorial del logo (sin estelas exteriores ni deformación de contornos)
+    // 1. Recorte EXACTO y RECTO a la silueta vectorial del logo
     ctx.save();
     ctx.translate(logoX, logoY);
     ctx.scale(scale, scale);
     ctx.clip(logoPath2D);
 
-    // 2. Relleno base en rojo identitario con opacidad calibrada para revelar nítidamente la foto
-    ctx.fillStyle = '#e51d1d';
-    ctx.globalAlpha = 0.85;
-    ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
-    ctx.globalAlpha = 1.0;
+    if (isMobile) {
+      // Mobile: Dibujar foto activa del carrusel con ajuste cover dentro del logo
+      const currentImg = mobileLogoImgs[mobileSlideIndex % mobileLogoImgs.length];
+      if (currentImg && currentImg.complete && currentImg.naturalWidth > 0) {
+        const imgRatio = currentImg.naturalWidth / currentImg.naturalHeight;
+        const logoRatio = LOGO_ORIG_W / LOGO_ORIG_H;
+        let dw, dh, dx, dy;
+        if (imgRatio > logoRatio) {
+          dh = LOGO_ORIG_H;
+          dw = dh * imgRatio;
+          dx = (LOGO_ORIG_W - dw) / 2;
+          dy = 0;
+        } else {
+          dw = LOGO_ORIG_W;
+          dh = dw / imgRatio;
+          dx = 0;
+          dy = (LOGO_ORIG_H - dh) / 2;
+        }
+        ctx.drawImage(currentImg, dx, dy, dw, dh);
+
+        // Capa de tinte rojo Xerox (#e51d1d) fusionada con la fotografía
+        ctx.save();
+        ctx.globalCompositeOperation = 'multiply';
+        ctx.fillStyle = '#e51d1d';
+        ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+        ctx.restore();
+
+        // Destello sutil para realzar altas luces en el rojo
+        ctx.save();
+        ctx.globalCompositeOperation = 'screen';
+        ctx.fillStyle = 'rgba(229, 29, 29, 0.20)';
+        ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+        ctx.restore();
+      } else {
+        ctx.fillStyle = '#e51d1d';
+        ctx.globalAlpha = 0.85;
+        ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+        ctx.globalAlpha = 1.0;
+      }
+    } else {
+      // 2. Desktop: Relleno base en rojo identitario con opacidad calibrada para revelar nítidamente la foto
+      ctx.fillStyle = '#e51d1d';
+      ctx.globalAlpha = 0.85;
+      ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+      ctx.globalAlpha = 1.0;
+    }
 
     // 3. Scanlines analógicas de fotocopiadora espaciadas (la foto respira entre líneas)
     for (let ly = 0; ly < LOGO_ORIG_H; ly += 4) {
