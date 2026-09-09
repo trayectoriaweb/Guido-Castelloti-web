@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initImageTrail();
   initMobileMenu();
   initFloatingWidgetVisibility();
+  initHeaderScroll();
 });
 
 /* =========================================================================
@@ -712,4 +713,43 @@ function initFloatingWidgetVisibility() {
   });
 
   observer.observe(contactSection);
+}
+
+/* =========================================================================
+   7. Cabecera Transparente Estratégica (Hero en Inicio y Fotos en Proyecto)
+   ========================================================================= */
+function initHeaderScroll() {
+  const header = document.getElementById('siteHeader');
+  if (!header) return;
+
+  const isHome = document.querySelector('.hero-panorama-section') !== null;
+  const isProject = document.body.classList.contains('project-detail-body');
+
+  function updateHeader() {
+    const scrollY = window.scrollY || window.pageYOffset || 0;
+
+    if (isHome) {
+      const hero = document.getElementById('hero');
+      const heroHeight = hero ? hero.offsetHeight : window.innerHeight;
+      // En el Hero (al inicio): transparente para apreciar las fotos. Al pasar el Hero: blanco
+      if (scrollY < heroHeight - 80) {
+        header.classList.add('is-transparent');
+      } else {
+        header.classList.remove('is-transparent');
+      }
+    } else if (isProject) {
+      // En el detalle de proyecto: al inicio blanco (junto al botón de volver),
+      // y al bajar por las fotos se hace transparente para aprovechar todo el espacio visual
+      if (scrollY > 60) {
+        header.classList.add('is-transparent');
+      } else {
+        header.classList.remove('is-transparent');
+      }
+    } else {
+      header.classList.remove('is-transparent');
+    }
+  }
+
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
 }
