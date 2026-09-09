@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css?v=2026.guido.28" />
+  <link rel="stylesheet" href="css/style.css?v=2026.guido.29" />
 </head>
 <body class="editorial-portfolio-body">
 
@@ -24,6 +24,7 @@
     <div class="header-inner">
       <div class="header-brand-box">
         <a href="#hero" class="brand-logo-link" aria-label="Guido Castellotti — Inicio">
+          <span class="brand-name-hero">Guido Castellotti</span>
           <svg class="brand-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 825 385" fill="currentColor">
             <path d="M0,0h92v301h-92z M222,0h92v302h-92z M378,0h447v82h-447z M378,82h446v1h-446z M444,83h92v218h-92z M667,83h92v302h-92z M0,301h93v1h-93z M443,301h93v1h-93z M0,302h536v83h-536z" />
           </svg>
@@ -170,17 +171,7 @@
 
         </div>
 
-        <!-- Filtro SVG para Bordes Mordidos y Tinta Desgastada "Trash" (Opción 1) -->
-        <svg class="visually-hidden" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
-          <defs>
-            <filter id="hero-trash-distress" x="-20%" y="-20%" width="140%" height="140%">
-              <feTurbulence type="fractalNoise" baseFrequency="0.06 0.14" numOctaves="4" result="paperNoise" />
-              <feDisplacementMap in="SourceGraphic" in2="paperNoise" scale="16" xChannelSelector="R" yChannelSelector="G" />
-            </filter>
-          </defs>
-        </svg>
-
-        <!-- Canvas del Logo Dinámico con Craquelado Interior que sigue al cursor -->
+        <!-- Canvas del Logo Dinámico con Textura Interior que sigue al cursor -->
         <canvas id="heroContraformaCanvas" class="hero-contraforma-canvas" aria-hidden="true"></canvas>
 
         <!-- Controles de navegación -->
@@ -946,6 +937,6 @@
   </div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=2026.guido.28"></script>
+  <script src="js/main.js?v=2026.guido.29"></script>
 </body>
 </html>

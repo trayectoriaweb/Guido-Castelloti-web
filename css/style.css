@@ -89,9 +89,10 @@ button {
   border-bottom: 1px solid var(--border-light);
   display: flex;
   align-items: center;
-  transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
-              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
-              backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: background-color 0.45s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-bottom-color 0.45s cubic-bezier(0.16, 1, 0.3, 1), 
+              backdrop-filter 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              -webkit-backdrop-filter 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Estado transparente: para Hero al inicio y al scrollear fotos de proyecto */
@@ -111,9 +112,8 @@ button {
 }
 
 .site-header .nav-link,
-.site-header .brand-logo-link,
 .site-header .mobile-menu-toggle .burger-bar {
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.35s ease, background-color 0.35s ease;
 }
 
 /* En Home (sobre el Hero): tipografía blanca limpia, sin sombras ni opacidades */
@@ -191,23 +191,71 @@ body.project-detail-body {
 }
 
 .brand-logo-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   color: var(--red-editorial);
   text-decoration: none;
-  transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  height: clamp(24px, 2.8vw, 28px);
+  min-width: 155px;
   padding: 4px 0;
+  transition: color 0.35s ease;
 }
 
 .brand-logo-link:hover {
   color: #000000;
-  transform: scale(1.04);
+}
+
+/* En el Hero: Transición suave de desvanecimiento entre 'Guido Castellotti' y el logo SVG */
+.brand-name-hero {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  font-family: var(--font-headline);
+  font-size: clamp(1.15rem, 1.45vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--red-editorial);
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) translateY(4px);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.45s,
+              color 0.25s ease;
+  pointer-events: none;
 }
 
 .brand-logo-svg {
+  position: absolute;
+  left: 0;
+  top: 50%;
   width: auto;
   height: clamp(22px, 2.5vw, 26px);
   display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateY(0);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.45s;
+  pointer-events: auto;
+}
+
+body:not(.project-detail-body) .site-header.is-transparent .brand-name-hero {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+body:not(.project-detail-body) .site-header.is-transparent .brand-logo-svg {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%) translateY(-4px);
+  pointer-events: none;
 }
 
 .brand-text-label {
@@ -548,7 +596,6 @@ body.mobile-menu-open .floating-talk-wrapper {
   z-index: 10;
   pointer-events: none;
   mix-blend-mode: multiply;
-  filter: url(#hero-trash-distress);
 }
 
 .panorama-slider-track {
@@ -1466,7 +1513,7 @@ body.mobile-menu-open .floating-talk-wrapper {
   transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease;
 }
 
-.floating-talk-wrapper.is-hidden {
+.floating-talk-wrapper.is-hidden:not(:has(.floating-talk-panel.open)) {
   opacity: 0;
   visibility: hidden;
   transform: translateY(24px);
@@ -1501,6 +1548,35 @@ body.mobile-menu-open .floating-talk-wrapper {
 
 .floating-talk-pill:hover .talk-pill-icon {
   transform: translate(2px, -2px);
+}
+
+/* Firma Conceptual del Autor en Detalle de Proyectos (Lado contrario a "Hablemos") */
+.project-author-signature {
+  position: fixed;
+  bottom: 28px;
+  left: var(--pad-side);
+  z-index: 2000;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000;
+  font-family: var(--font-headline);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .project-author-signature {
+    bottom: 20px;
+    left: 18px;
+    font-size: 0.9rem;
+  }
 }
 
 .talk-pill-icon {

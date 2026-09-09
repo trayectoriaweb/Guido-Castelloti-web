@@ -233,17 +233,33 @@ function initHeroContraforma() {
     const logoX = Math.max(0, Math.min(width - logoW, rawX));
     const logoY = Math.max(0, Math.min(height - logoH, rawY));
 
-    // 1. Recorte estricto a la silueta del logo de Guido
+    // 1. Recorte EXACTO y RECTO a la silueta vectorial del logo (sin estelas exteriores ni deformación de contornos)
     ctx.save();
     ctx.translate(logoX, logoY);
     ctx.scale(scale, scale);
     ctx.clip(logoPath2D);
 
-    // 2. Relleno en el rojo identitario (#e51d1d)
+    // 2. Relleno base en rojo identitario con opacidad calibrada para revelar nítidamente la foto
     ctx.fillStyle = '#e51d1d';
+    ctx.globalAlpha = 0.85;
     ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+    ctx.globalAlpha = 1.0;
 
-    // 3. Trama de grano analógico "trash" (estilo risografía / fotocopia)
+    // 3. Scanlines analógicas de fotocopiadora espaciadas (la foto respira entre líneas)
+    for (let ly = 0; ly < LOGO_ORIG_H; ly += 4) {
+      const isThick = (ly % 12 === 0);
+      ctx.fillStyle = isThick ? 'rgba(0, 0, 0, 0.45)' : 'rgba(0, 0, 0, 0.18)';
+      ctx.fillRect(0, ly, LOGO_ORIG_W, isThick ? 2 : 1);
+    }
+
+    // 4. Tiras de desplazamiento de escaneo / glitch sutil
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.28)';
+    const slices = [55, 120, 195, 260, 325];
+    slices.forEach(sy => {
+      ctx.fillRect(0, sy, LOGO_ORIG_W, 2);
+    });
+
+    // 5. Trama de grano analógico "trash" (motas de tóner y risografía)
     if (noisePattern) {
       ctx.fillStyle = noisePattern;
       ctx.globalAlpha = 0.35;
@@ -251,10 +267,10 @@ function initHeroContraforma() {
       ctx.globalAlpha = 1.0;
     }
 
-    // 4. Desgaste analógico de tinta (micro-raspaduras y motas de sello serigráfico)
+    // 6. Micro-desgaste analógico de tinta (sello)
     ctx.save();
     ctx.globalCompositeOperation = 'destination-out';
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.28)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.30)';
     const scratches = [
       [45, 60, 24, 2], [140, 180, 18, 2], [230, 90, 32, 2.5],
       [260, 220, 20, 2], [390, 40, 45, 2], [470, 140, 28, 2],
@@ -434,7 +450,12 @@ function initFloatingTalkWidget() {
 
   if (!btnOpen || !panel) return;
 
+  const widget = document.getElementById('floatingTalkWidget');
+
   function openPanel(prefillService = '') {
+    if (widget) {
+      widget.classList.remove('is-hidden');
+    }
     panel.classList.add('open');
     panel.setAttribute('aria-hidden', 'false');
     if (backdrop) backdrop.classList.add('open');
@@ -451,6 +472,14 @@ function initFloatingTalkWidget() {
     panel.classList.remove('open');
     panel.setAttribute('aria-hidden', 'true');
     if (backdrop) backdrop.classList.remove('open');
+
+    const contactSection = document.getElementById('contacto');
+    if (contactSection && widget) {
+      const rect = contactSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        widget.classList.add('is-hidden');
+      }
+    }
   }
 
   btnOpen.addEventListener('click', (e) => {
@@ -685,13 +714,16 @@ function initMobileMenu() {
 function initFloatingWidgetVisibility() {
   const widget = document.getElementById('floatingTalkWidget');
   const contactSection = document.getElementById('contacto');
+  const panel = document.getElementById('floatingTalkPanel');
 
   if (!widget || !contactSection) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        widget.classList.add('is-hidden');
+        if (!panel || !panel.classList.contains('open')) {
+          widget.classList.add('is-hidden');
+        }
       } else {
         widget.classList.remove('is-hidden');
       }
