@@ -131,42 +131,33 @@ function initHeroContraforma() {
   const LOGO_ORIG_W = 825;
   const LOGO_ORIG_H = 385;
 
-  // 10 imágenes con texturas ricas seleccionadas de las obras de Guido
-  const TEXTURE_SOURCES = [
-    'img/proyectos/guido_0559.jpg', // 0: Risografía A3 Fotografía Impresa
-    'img/proyectos/guido_0485.jpg', // 1: Rosario es un Eclipse (Noise & Type)
-    'img/proyectos/guido_0566.jpg', // 2: Zine Infiernos (Grano analógico)
-    'img/proyectos/guido_0570.jpg', // 3: Zine Ballet Para Las Masas (Impresión editorial)
-    'img/proyectos/guido_0568.jpg', // 4: Print Rosario es un Eclipse (Trama serigráfica)
-    'img/proyectos/guido_0503.jpg', // 5: Diseño Editorial Revista (Cuadrícula tipográfica)
-    'img/proyectos/guido_0027.jpg', // 6: Bastilla (Textura textil e hilado)
-    'img/proyectos/guido_0215.jpg', // 7: Lira Bikes (Metal, cuadro de acero y soldaduras)
-    'img/proyectos/guido_0471.jpg', // 8: Gyor (Packaging y tipografía rítmica)
-    'img/proyectos/guido_0467.jpg'  // 9: Kid Kerchak (Geometrías y contraste gráfico)
-  ];
+  // Generador de trama de grano analógico "trash" (estilo risografía / serigrafía / fanzine)
+  let noisePattern = null;
+  function createNoisePattern() {
+    try {
+      const nCanvas = document.createElement('canvas');
+      nCanvas.width = 160;
+      nCanvas.height = 160;
+      const nCtx = nCanvas.getContext('2d');
+      if (!nCtx) return null;
 
-  const textureImgs = TEXTURE_SOURCES.map(src => {
-    const img = new Image();
-    img.src = src;
-    return img;
-  });
-
-  // Facetas craqueladas poligonales que cubren la silueta del logo
-  const shards = [
-    { pts: [[0, 0], [140, 0], [130, 160], [0, 150]], img: 0 },
-    { pts: [[0, 140], [130, 160], [140, 310], [0, 310]], img: 1 },
-    { pts: [[0, 300], [260, 300], [240, 385], [0, 385]], img: 2 },
-    { pts: [[230, 300], [550, 300], [550, 385], [230, 385]], img: 3 },
-    { pts: [[210, 0], [340, 0], [350, 160], [210, 150]], img: 4 },
-    { pts: [[210, 150], [350, 160], [340, 310], [210, 310]], img: 5 },
-    { pts: [[370, 0], [560, 0], [540, 90], [370, 90]], img: 6 },
-    { pts: [[540, 0], [700, 0], [680, 90], [530, 90]], img: 7 },
-    { pts: [[680, 0], [830, 0], [830, 90], [670, 90]], img: 8 },
-    { pts: [[430, 80], [550, 80], [550, 200], [430, 190]], img: 9 },
-    { pts: [[430, 190], [550, 200], [550, 310], [430, 310]], img: 0 },
-    { pts: [[650, 80], [780, 80], [780, 240], [650, 230]], img: 1 },
-    { pts: [[650, 230], [780, 240], [780, 385], [650, 385]], img: 2 }
-  ];
+      const imgData = nCtx.createImageData(160, 160);
+      const d = imgData.data;
+      for (let i = 0; i < d.length; i += 4) {
+        const isWhite = Math.random() < 0.45;
+        const v = isWhite ? 255 : 0;
+        const a = Math.floor(Math.random() * 85);
+        d[i] = v;
+        d[i + 1] = v;
+        d[i + 2] = v;
+        d[i + 3] = a;
+      }
+      nCtx.putImageData(imgData, 0, 0);
+      return ctx.createPattern(nCanvas, 'repeat');
+    } catch (e) {
+      return null;
+    }
+  }
 
   let width = 0, height = 0;
   let targetX = 0, targetY = 0;
@@ -174,12 +165,6 @@ function initHeroContraforma() {
   let isHovering = false;
   let isVisible = true;
   let animId = null;
-  let textureShift = 0;
-
-  // Sincronizar rotación de texturas craqueladas con el carrusel de fondo
-  window.onPanoramaSlideChange = (slideIndex) => {
-    textureShift = slideIndex;
-  };
 
   function resize() {
     const rect = viewport.getBoundingClientRect();
@@ -190,6 +175,8 @@ function initHeroContraforma() {
     canvas.height = Math.round(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+    noisePattern = createNoisePattern();
+
     if (!isHovering) {
       currentX = targetX = width / 2;
       currentY = targetY = height / 2;
@@ -199,15 +186,22 @@ function initHeroContraforma() {
   window.addEventListener('resize', resize);
   resize();
 
+  // Seguimiento del cursor: permite que el logo viaje libremente hasta el borde superior absoluto del Hero
   function onPointerMove(e) {
     const rect = viewport.getBoundingClientRect();
-    targetX = e.clientX - rect.left;
-    targetY = e.clientY - rect.top;
-    isHovering = true;
+    if (e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= 0 && e.clientY <= rect.bottom) {
+      targetX = e.clientX - rect.left;
+      targetY = Math.max(0, e.clientY - rect.top);
+      isHovering = true;
+    } else {
+      isHovering = false;
+      targetX = width / 2;
+      targetY = height / 2;
+    }
   }
 
-  viewport.addEventListener('pointermove', onPointerMove, { passive: true });
-  viewport.addEventListener('pointerdown', onPointerMove, { passive: true });
+  window.addEventListener('pointermove', onPointerMove, { passive: true });
+  window.addEventListener('pointerdown', onPointerMove, { passive: true });
 
   viewport.addEventListener('pointerleave', () => {
     isHovering = false;
@@ -223,60 +217,39 @@ function initHeroContraforma() {
     currentX += (targetX - currentX) * 0.12;
     currentY += (targetY - currentY) * 0.12;
 
-    // Limpieza completa del canvas (100% transparente afuera del logo)
+    // Limpieza completa del canvas
     ctx.clearRect(0, 0, width, height);
 
     // Escala del logo según resolución
     const logoW = width > 768 
-      ? Math.min(Math.max(width * 0.28, 260), 420) 
-      : Math.min(Math.max(width * 0.65, 230), 320);
+      ? Math.min(Math.max(width * 0.30, 270), 440) 
+      : Math.min(Math.max(width * 0.68, 230), 330);
     const scale = logoW / LOGO_ORIG_W;
     const logoH = LOGO_ORIG_H * scale;
 
-    // Centrado del logo en el cursor acotado al viewport
+    // Centrado del logo en el cursor acotado al viewport, permitiendo llegar al tope superior
     const rawX = currentX - logoW / 2;
     const rawY = currentY - logoH / 2;
-    const padding = 10;
-    const logoX = Math.max(padding, Math.min(width - logoW - padding, rawX));
-    const logoY = Math.max(padding, Math.min(height - logoH - padding, rawY));
+    const logoX = Math.max(0, Math.min(width - logoW, rawX));
+    const logoY = Math.max(0, Math.min(height - logoH, rawY));
 
-    // Desfase de paralaje interior al mover el cursor
-    const panX = ((currentX / width) - 0.5) * 80;
-    const panY = ((currentY / height) - 0.5) * 50;
-
-    // 1. Recorte estricto al monograma del logo (Sin trazos, sin bordes, sin sombras)
+    // 1. Recorte estricto a la silueta del logo de Guido
     ctx.save();
     ctx.translate(logoX, logoY);
     ctx.scale(scale, scale);
     ctx.clip(logoPath2D);
 
-    // 2. Dibujar las facetas del mosaico craquelado con las 10 texturas
-    shards.forEach((shard) => {
-      ctx.save();
-      ctx.beginPath();
-      shard.pts.forEach((pt, pIdx) => {
-        if (pIdx === 0) ctx.moveTo(pt[0], pt[1]);
-        else ctx.lineTo(pt[0], pt[1]);
-      });
-      ctx.closePath();
-      ctx.clip();
+    // 2. Relleno en el rojo identitario (#e51d1d)
+    ctx.fillStyle = '#e51d1d';
+    ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
 
-      const imgIdx = (shard.img + textureShift) % textureImgs.length;
-      const img = textureImgs[imgIdx];
-
-      if (img && img.complete && img.naturalWidth > 0) {
-        ctx.drawImage(
-          img,
-          -120 + panX, -80 + panY,
-          LOGO_ORIG_W + 240, LOGO_ORIG_H + 160
-        );
-      } else {
-        ctx.fillStyle = '#181818';
-        ctx.fill();
-      }
-
-      ctx.restore();
-    });
+    // 3. Trama de grano analógico "trash" (estilo risografía / fotocopia)
+    if (noisePattern) {
+      ctx.fillStyle = noisePattern;
+      ctx.globalAlpha = 0.35;
+      ctx.fillRect(0, 0, LOGO_ORIG_W, LOGO_ORIG_H);
+      ctx.globalAlpha = 1.0;
+    }
 
     ctx.restore();
 

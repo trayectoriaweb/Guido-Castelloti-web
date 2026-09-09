@@ -100,23 +100,26 @@ button {
   border-bottom-color: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  pointer-events: none; /* Permite que el cursor y el logo lleguen hasta el tope sin bloqueo */
 }
 
-.site-header.is-transparent:hover {
-  background-color: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+/* Solo los botones y enlaces interactivos capturan el clic */
+.site-header.is-transparent .brand-logo-link,
+.site-header.is-transparent .nav-link,
+.site-header.is-transparent .mobile-menu-toggle {
+  pointer-events: auto;
 }
 
 .site-header .nav-link,
 .site-header .brand-logo-link,
 .site-header .mobile-menu-toggle .burger-bar {
-  transition: color 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
+/* En Home (sobre el Hero): tipografía blanca limpia, sin sombras ni opacidades */
 .site-header.is-transparent .nav-link {
   color: #ffffff;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
   font-weight: 500;
 }
 
@@ -127,12 +130,34 @@ button {
 
 .site-header.is-transparent .brand-logo-link {
   color: var(--red-editorial);
-  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.6));
+  filter: none;
 }
 
 .site-header.is-transparent .mobile-menu-toggle .burger-bar {
   background-color: #ffffff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+
+/* En Proyectos (sobre las fotos): tipografía en ROJO editorial pura para máximo contraste */
+body.project-detail-body .site-header.is-transparent .nav-link {
+  color: var(--red-editorial);
+  text-shadow: none;
+  font-weight: 600;
+}
+
+body.project-detail-body .site-header.is-transparent .nav-link:hover {
+  color: #000000;
+  opacity: 1;
+}
+
+body.project-detail-body .site-header.is-transparent .brand-logo-link {
+  color: var(--red-editorial);
+  filter: none;
+}
+
+body.project-detail-body .site-header.is-transparent .mobile-menu-toggle .burger-bar {
+  background-color: var(--red-editorial);
+  box-shadow: none;
 }
 
 /* Si el menú móvil está abierto, forzar siempre cabecera blanca */
@@ -514,7 +539,7 @@ body.mobile-menu-open .floating-talk-wrapper {
   border: 0;
 }
 
-/* Canvas de Logo Dinámico con Craquelado que sigue al cursor */
+/* Canvas de Logo Dinámico con Fusión Trash Roja que sigue al cursor */
 .hero-contraforma-canvas {
   position: absolute;
   inset: 0;
@@ -522,6 +547,7 @@ body.mobile-menu-open .floating-talk-wrapper {
   height: 100%;
   z-index: 10;
   pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 .panorama-slider-track {
