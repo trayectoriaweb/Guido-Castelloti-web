@@ -685,13 +685,14 @@ body.mobile-menu-open .floating-talk-wrapper {
     gap: 8px;
   }
   .panorama-nav-btn {
-    opacity: 0.85;
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+    display: none !important;
   }
-  .panorama-nav-btn.prev { left: 12px; }
-  .panorama-nav-btn.next { right: 12px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .panorama-nav-btn {
+    display: none !important;
+  }
 }
 
 /* Barra Meta debajo de la panorámica */

@@ -203,13 +203,13 @@ function initHeroContraforma() {
     const gamma = (typeof e.gamma === 'number' && !isNaN(e.gamma)) ? e.gamma : 0;
     const beta = (typeof e.beta === 'number' && !isNaN(e.beta)) ? e.beta : 48;
 
-    // Normalización: inclinación lateral (gamma) y vertical (beta, reposo neutro ~48°)
-    const normX = Math.max(-1, Math.min(1, gamma / 30));
-    const normY = Math.max(-1, Math.min(1, (beta - 48) / 25));
+    // Normalización reactiva al movimiento de muñeca (gamma lateral, beta vertical, neutro ~45°)
+    const normX = Math.max(-1, Math.min(1, gamma / 18));
+    const normY = Math.max(-1, Math.min(1, (beta - 45) / 16));
 
-    // Rango elástico contenido en torno al centro (±14% en ancho, ±10% en alto)
-    const maxOffsetW = width * 0.14;
-    const maxOffsetH = height * 0.10;
+    // Rango amplio y desatado: el logo recorre holgadamente toda la pantalla del teléfono
+    const maxOffsetW = width * 0.45;
+    const maxOffsetH = height * 0.42;
     tiltTargetX = normX * maxOffsetW;
     tiltTargetY = normY * maxOffsetH;
 
@@ -298,8 +298,8 @@ function initHeroContraforma() {
   function render() {
     if (!isVisible) return;
 
-    // Movimiento orgánico magnético: inercia suave (0.06 en mobile para flotar con el giroscopio, 0.12 en desktop)
-    const lerpSpeed = isMobile ? 0.06 : 0.12;
+    // Movimiento orgánico magnético: inercia reactiva (0.09 en mobile para fluidez con el giroscopio, 0.12 en desktop)
+    const lerpSpeed = isMobile ? 0.09 : 0.12;
     currentX += (targetX - currentX) * lerpSpeed;
     currentY += (targetY - currentY) * lerpSpeed;
 
